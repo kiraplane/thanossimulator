@@ -1,3 +1,4 @@
+import { AdsterraAdFrame } from '@/components/ads/adsterra-ad';
 import { FaqSection } from '@/components/animesquadron/faq-section';
 import { TierListTable } from '@/components/animesquadron/tier-list-table';
 import Container from '@/components/layout/container';
@@ -72,6 +73,12 @@ export default function TierListPage() {
           </p>
         </header>
 
+        <AdsterraAdFrame
+          slot="banner-728x90"
+          className="rounded-lg border border-[#3A2A24] bg-[#130D0B] py-4"
+          label
+        />
+
         <section className="rounded-lg border border-[#3A2A24] bg-[#130D0B] p-6">
           <h2 className="font-display text-2xl font-bold">Ranking rules</h2>
           <div className="mt-4 grid gap-4 text-sm leading-7 text-[#D5C6B7] md:grid-cols-3">
@@ -103,6 +110,7 @@ export default function TierListPage() {
         </section>
 
         <TierListTable />
+        <AdsterraAdFrame slot="banner-300x250" label />
 
         <FaqSection items={faqs} />
       </Container>

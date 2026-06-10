@@ -1,3 +1,4 @@
+import { AdsterraAdFrame } from '@/components/ads/adsterra-ad';
 import { FaqSection } from '@/components/animesquadron/faq-section';
 import {
   ConfidenceBadge,
@@ -57,6 +58,12 @@ export default function UnitsPage() {
           </p>
         </header>
 
+        <AdsterraAdFrame
+          slot="banner-728x90"
+          className="rounded-lg border border-[#3A2A24] bg-[#130D0B] py-4"
+          label
+        />
+
         <div className="grid gap-4 lg:grid-cols-2">
           {unitRoleRankings.map((entry) => (
             <article
@@ -109,6 +116,7 @@ export default function UnitsPage() {
             </LocaleLink>
           </Button>
         </div>
+        <AdsterraAdFrame slot="banner-300x250" label />
 
         <FaqSection
           items={[

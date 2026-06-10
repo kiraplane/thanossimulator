@@ -1,3 +1,4 @@
+import { AdsterraAdFrame } from '@/components/ads/adsterra-ad';
 import { FaqSection } from '@/components/animesquadron/faq-section';
 import Container from '@/components/layout/container';
 import { Badge } from '@/components/ui/badge';
@@ -39,6 +40,12 @@ export default function GuidesPage() {
             traits, rerolls, game modes, Discord links, and safe Roblox access.
           </p>
         </header>
+
+        <AdsterraAdFrame
+          slot="banner-728x90"
+          className="rounded-lg border border-[#3A2A24] bg-[#130D0B] py-4"
+          label
+        />
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {guides.map((guide) => (

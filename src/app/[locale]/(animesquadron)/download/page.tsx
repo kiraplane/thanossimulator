@@ -1,3 +1,4 @@
+import { AdsterraAdFrame } from '@/components/ads/adsterra-ad';
 import { FaqSection } from '@/components/animesquadron/faq-section';
 import Container from '@/components/layout/container';
 import { Badge } from '@/components/ui/badge';
@@ -39,6 +40,12 @@ export default function DownloadPage() {
             copied clients.
           </p>
         </header>
+
+        <AdsterraAdFrame
+          slot="banner-300x250"
+          className="rounded-lg border border-[#3A2A24] bg-[#130D0B] py-4"
+          label
+        />
 
         <section className="rounded-lg border border-[#3A2A24] bg-[#130D0B] p-6">
           <h2 className="font-display text-2xl font-bold">

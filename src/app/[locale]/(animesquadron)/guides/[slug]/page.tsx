@@ -1,3 +1,7 @@
+import {
+  AdsterraAdFrame,
+  AdsterraSideRails,
+} from '@/components/ads/adsterra-ad';
 import { FaqSection } from '@/components/animesquadron/faq-section';
 import Container from '@/components/layout/container';
 import { JsonLd } from '@/components/seo/json-ld';
@@ -122,6 +126,7 @@ export default async function GuidePage({
   return (
     <div className="bg-[#090706] py-12 text-[#FFF5EA]">
       <JsonLd data={jsonLd} />
+      <AdsterraSideRails />
       <Container className="grid gap-8 px-4 lg:grid-cols-[1fr_300px]">
         <article className="rounded-lg border border-[#3A2A24] bg-[#130D0B] p-6 md:p-8">
           <div className="flex flex-wrap gap-2">
@@ -185,6 +190,8 @@ export default async function GuidePage({
           ) : null}
 
           <div className="mt-8 space-y-8">
+            <AdsterraAdFrame slot="banner-300x250" className="mt-8" label />
+
             {guide.body.map((section) => (
               <section key={section.heading}>
                 <h2 className="font-display text-2xl font-bold">

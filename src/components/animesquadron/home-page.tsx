@@ -1,3 +1,7 @@
+import {
+  AdsterraAdFrame,
+  AdsterraNativeBanner,
+} from '@/components/ads/adsterra-ad';
 import Container from '@/components/layout/container';
 import { JsonLd } from '@/components/seo/json-ld';
 import { Badge } from '@/components/ui/badge';
@@ -283,6 +287,8 @@ export function AnimeSquadronHomePage() {
         </Container>
       </section>
 
+      <AdsterraNativeBanner className="border-[#3A2A24] border-b bg-[#090706]" />
+
       <section className="border-[#3A2A24] border-b bg-[#100B09] py-12">
         <Container className="grid gap-6 px-4 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
@@ -378,6 +384,12 @@ export function AnimeSquadronHomePage() {
           </div>
         </Container>
       </section>
+
+      <AdsterraAdFrame
+        slot="banner-300x250"
+        className="border-[#3A2A24] border-b bg-[#090706] py-8"
+        label
+      />
 
       <section className="border-[#3A2A24] border-t py-12">
         <Container className="space-y-6 px-4">

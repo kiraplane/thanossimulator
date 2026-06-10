@@ -1,3 +1,4 @@
+import { AdsterraAdFrame } from '@/components/ads/adsterra-ad';
 import { CodeCopyButton } from '@/components/animesquadron/code-copy-button';
 import { FaqSection } from '@/components/animesquadron/faq-section';
 import { LastUpdated } from '@/components/animesquadron/last-updated';
@@ -85,6 +86,12 @@ export default function CodesPage() {
           <LastUpdated date={codeCheckSummary.checkedAt} />
         </header>
 
+        <AdsterraAdFrame
+          slot="banner-728x90"
+          className="rounded-lg border border-[#3A2A24] bg-[#130D0B] py-4"
+          label
+        />
+
         <section className="rounded-lg border border-[#3A2A24] bg-[#130D0B] p-6">
           <h2 className="font-display text-2xl font-bold">
             {codeCheckSummary.status}
@@ -167,6 +174,7 @@ export default function CodesPage() {
               : `${expiredCodes.length} expired codes are tracked.`}
           </p>
         </section>
+        <AdsterraAdFrame slot="banner-300x250" label />
 
         <FaqSection items={faqs} />
       </Container>
