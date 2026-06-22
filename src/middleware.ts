@@ -37,6 +37,10 @@ const retiredPublicRouteRedirects: Array<{
   { pattern: /^\/anime-squadron-code\/?$/, target: '/codes' },
   { pattern: /^\/tierlist\/?$/, target: '/tier-list' },
   { pattern: /^\/anime-squadron-tier-list\/?$/, target: '/tier-list' },
+  {
+    pattern: /^\/guides\/gear-crafting-recipes\/?$/,
+    target: '/guides/gear-crafting-guide',
+  },
   { pattern: /^\/discord-server\/?$/, target: '/discord' },
   { pattern: /^\/anime-squadron-discord\/?$/, target: '/discord' },
 ];

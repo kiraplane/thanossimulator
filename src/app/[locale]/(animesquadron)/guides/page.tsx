@@ -36,9 +36,9 @@ export default function GuidesPage() {
             Anime Squadron Guides
           </h1>
           <p className="text-lg leading-8 text-[#D5C6B7]">
-            Decision-first guides for active codes, beginner progression, units,
-            secret units, traits, rerolls, farming, game modes, Discord links,
-            and safe Roblox access.
+            Decision-first guides for UPD 0.5 units, Gogeta/Gometa, Falcon,
+            Berserker, gear crafting, active codes, traits, rerolls, farming,
+            game modes, Discord links, and safe Roblox access.
           </p>
         </header>
 

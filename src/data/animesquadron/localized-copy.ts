@@ -185,7 +185,7 @@ const en: PageCopy = {
       },
       {
         title: 'Tier List',
-        body: 'Early unit-role priority',
+        body: 'UPD 0.5 best units and role fit',
         href: '/tier-list',
       },
       {
@@ -225,10 +225,10 @@ const en: PageCopy = {
     launchHeading: 'Redeem codes, build one carry, protect Perfect Cubes',
     launchBody:
       'Anime Squadron is still in early access, so the best launch plan is conservative: redeem the newest codes first, test your summons, upgrade one main damage unit, and wait before spending rare reroll materials on filler.',
-    searchEyebrow: 'Search hub',
-    searchHeading: 'Every Anime Squadron keyword has a page to continue from',
+    searchEyebrow: 'Quick paths',
+    searchHeading: 'Choose your next Anime Squadron page',
     searchBody:
-      'Use the homepage as the index for the full guide set: codes, tier list, units, traits, rerolls, game modes, Discord, download, and the long-tail guides players search for after launch.',
+      'Jump from the homepage to codes, tier list picks, units, traits, rerolls, game modes, Discord, download, and current update guides.',
     corePagesHeading: 'Core Anime Squadron pages',
     coreKeywordLinks: [
       {
@@ -272,9 +272,9 @@ const en: PageCopy = {
         intent: 'Official Roblox link and safety',
       },
     ],
-    guideKeywordsHeading: 'Guide long-tail keywords',
+    guideKeywordsHeading: 'Focused guides',
     tierEyebrow: 'Tier list snapshot',
-    tierHeading: 'Rank unit jobs before chasing unit names',
+    tierHeading: 'UPD 0.5 best units before you spend rerolls',
     guidesEyebrow: 'Latest guides',
     guidesHeading: 'Read the decision page before spending rewards',
     allGuides: 'All guides',
@@ -537,7 +537,7 @@ const vi: PageCopy = {
       },
       {
         title: 'Tier List',
-        body: 'Ưu tiên vai trò unit đầu game',
+        body: 'Unit mạnh UPD 0.5 và vai trò phù hợp',
         href: '/tier-list',
       },
       {
@@ -577,10 +577,10 @@ const vi: PageCopy = {
     launchHeading: 'Đổi code, xây một carry, giữ Perfect Cubes',
     launchBody:
       'Anime Squadron vẫn ở giai đoạn sớm, nên cách chơi an toàn là đổi code mới trước, thử summon, nâng một unit gây sát thương chính và chờ trước khi dùng nguyên liệu reroll hiếm.',
-    searchEyebrow: 'Trung tâm tìm kiếm',
-    searchHeading: 'Code, tier list và Discord Anime Squadron ở cùng một nơi',
+    searchEyebrow: 'Lối tắt nhanh',
+    searchHeading: 'Chọn trang Anime Squadron bạn cần tiếp theo',
     searchBody:
-      'Dùng trang chủ để đi tiếp tới code, tier list, unit, trait, reroll, Discord, download và các hướng dẫn quan trọng sau khi game ra mắt.',
+      'Từ trang chủ, đi nhanh tới code, tier list, unit, trait, reroll, Discord, download và các hướng dẫn cập nhật hiện tại.',
     corePagesHeading: 'Trang Anime Squadron chính',
     coreKeywordLinks: [
       {
@@ -626,7 +626,7 @@ const vi: PageCopy = {
     ],
     guideKeywordsHeading: 'Hướng dẫn liên quan',
     tierEyebrow: 'Tóm tắt tier list',
-    tierHeading: 'Xếp hạng vai trò trước khi chạy theo tên unit',
+    tierHeading: 'Unit mạnh UPD 0.5 trước khi tiêu reroll',
     guidesEyebrow: 'Hướng dẫn mới',
     guidesHeading: 'Đọc hướng dẫn trước khi tiêu tài nguyên',
     allGuides: 'Tất cả hướng dẫn',
@@ -862,7 +862,7 @@ const th: PageCopy = {
       },
       {
         title: 'Tier List',
-        body: 'ลำดับความสำคัญของบทบาทยูนิตช่วงต้นเกม',
+        body: 'ยูนิตเด่น UPD 0.5 และบทบาทที่เหมาะสม',
         href: '/tier-list',
       },
       {
@@ -902,10 +902,10 @@ const th: PageCopy = {
     launchHeading: 'แลกโค้ด ปั้น carry หนึ่งตัว และเก็บ Perfect Cubes',
     launchBody:
       'Anime Squadron ยังอยู่ในช่วงต้น ดังนั้นแผนที่ปลอดภัยคือแลกโค้ดใหม่ก่อน ทดลอง summon อัปเกรดยูนิตดาเมจหลักหนึ่งตัว และรอก่อนใช้วัตถุดิบ reroll ที่หายาก.',
-    searchEyebrow: 'ศูนย์รวมการค้นหา',
-    searchHeading: 'โค้ด tier list และ Discord ของ Anime Squadron อยู่ที่นี่',
+    searchEyebrow: 'ทางลัด',
+    searchHeading: 'เลือกหน้า Anime Squadron ที่ต้องใช้ต่อ',
     searchBody:
-      'ใช้หน้าแรกเพื่อไปต่อยังโค้ด tier list ยูนิต trait reroll Discord download และไกด์สำคัญหลังเกมเปิด.',
+      'จากหน้าแรก ไปยังโค้ด tier list ยูนิต trait reroll Discord download และไกด์อัปเดตล่าสุดได้เร็วขึ้น.',
     corePagesHeading: 'หน้าหลักของ Anime Squadron',
     coreKeywordLinks: [
       {
@@ -951,7 +951,7 @@ const th: PageCopy = {
     ],
     guideKeywordsHeading: 'ไกด์ที่เกี่ยวข้อง',
     tierEyebrow: 'สรุป tier list',
-    tierHeading: 'จัดอันดับบทบาทก่อนตามหาชื่อยูนิต',
+    tierHeading: 'ยูนิตเด่น UPD 0.5 ก่อนใช้ reroll',
     guidesEyebrow: 'ไกด์ล่าสุด',
     guidesHeading: 'อ่านไกด์ก่อนใช้ทรัพยากร',
     allGuides: 'ไกด์ทั้งหมด',
@@ -1184,7 +1184,7 @@ const ptBr: PageCopy = {
       },
       {
         title: 'Tier List',
-        body: 'Prioridade das funções de unidades no começo',
+        body: 'Melhores unidades da UPD 0.5 e função ideal',
         href: '/tier-list',
       },
       {
@@ -1224,10 +1224,10 @@ const ptBr: PageCopy = {
     launchHeading: 'Resgate códigos, monte um carry e guarde Perfect Cubes',
     launchBody:
       'Anime Squadron ainda está em fase inicial, então o plano mais seguro é resgatar os códigos novos, testar seus summons, melhorar uma unidade principal e esperar antes de gastar materiais raros de reroll.',
-    searchEyebrow: 'Central de busca',
-    searchHeading: 'Códigos, tier list e Discord de Anime Squadron em um lugar',
+    searchEyebrow: 'Atalhos',
+    searchHeading: 'Escolha a próxima página de Anime Squadron',
     searchBody:
-      'Use a página inicial para continuar para códigos, tier list, unidades, traits, rerolls, Discord, download e guias importantes do lançamento.',
+      'Saia da página inicial para códigos, tier list, unidades, traits, rerolls, Discord, download e guias da atualização atual.',
     corePagesHeading: 'Páginas principais de Anime Squadron',
     coreKeywordLinks: [
       {
@@ -1273,7 +1273,7 @@ const ptBr: PageCopy = {
     ],
     guideKeywordsHeading: 'Guias relacionados',
     tierEyebrow: 'Resumo da tier list',
-    tierHeading: 'Classifique funções antes de perseguir nomes de unidades',
+    tierHeading: 'Melhores unidades da UPD 0.5 antes de gastar rerolls',
     guidesEyebrow: 'Guias recentes',
     guidesHeading: 'Leia o guia antes de gastar recompensas',
     allGuides: 'Todos os guias',
@@ -1550,11 +1550,10 @@ const id: PageCopy = {
     launchHeading: 'Klaim kode, bangun satu carry, simpan Perfect Cubes',
     launchBody:
       'Anime Squadron masih di fase awal, jadi rute aman adalah klaim kode terbaru, coba summon, upgrade satu unit damage utama, dan tahan material reroll langka untuk unit yang benar-benar dipakai.',
-    searchEyebrow: 'Pusat pencarian',
-    searchHeading:
-      'Kode, tier list, dan Discord Anime Squadron dalam satu tempat',
+    searchEyebrow: 'Jalur cepat',
+    searchHeading: 'Pilih halaman Anime Squadron berikutnya',
     searchBody:
-      'Gunakan homepage untuk lanjut ke codes, tier list, units, traits, reroll, Discord, download, dan panduan penting setelah launch.',
+      'Dari homepage, buka cepat codes, tier list, units, traits, reroll, Discord, download, dan panduan update terbaru.',
     corePagesHeading: 'Halaman utama Anime Squadron',
     coreKeywordLinks: [
       {
@@ -1600,7 +1599,7 @@ const id: PageCopy = {
     ],
     guideKeywordsHeading: 'Panduan terkait',
     tierEyebrow: 'Ringkasan tier list',
-    tierHeading: 'Urutkan role sebelum mengejar nama unit',
+    tierHeading: 'Unit terbaik UPD 0.5 sebelum memakai reroll',
     guidesEyebrow: 'Panduan terbaru',
     guidesHeading: 'Baca panduan sebelum memakai reward',
     allGuides: 'Semua panduan',

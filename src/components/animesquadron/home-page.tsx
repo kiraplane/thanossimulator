@@ -2,15 +2,17 @@ import {
   AdsterraAdFrame,
   AdsterraNativeBanner,
 } from '@/components/ads/adsterra-ad';
+import { CodeCopyButton } from '@/components/animesquadron/code-copy-button';
 import Container from '@/components/layout/container';
 import { JsonLd } from '@/components/seo/json-ld';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { codeCheckSummary } from '@/data/animesquadron/codes';
+import { activeCodes, codeCheckSummary } from '@/data/animesquadron/codes';
 import { guides, siteDescription } from '@/data/animesquadron/guides';
 import { getAnimeSquadronCopy } from '@/data/animesquadron/localized-copy';
 import { officialGameFacts } from '@/data/animesquadron/sources';
-import { unitRoleRankings } from '@/data/animesquadron/tier-list';
+import { unitTierRankings } from '@/data/animesquadron/tier-list';
+import type { UnitTierRank } from '@/data/animesquadron/types';
 import { LocaleLink } from '@/i18n/navigation';
 import {
   ArrowRight,
@@ -27,10 +29,16 @@ import {
 } from 'lucide-react';
 import Image from 'next/image';
 import { LastUpdated } from './last-updated';
-import { TierBadge } from './status-badge';
 
 const primaryIcons = [ClipboardList, Trophy, Users, BookOpen];
 const topicIcons = [Swords, RotateCcw, Shield, Sparkles];
+const tierBadgeClassName: Record<UnitTierRank, string> = {
+  S: 'border-[#37D6D0] bg-[#092B2B] text-[#A9FFFA]',
+  A: 'border-[#7BD66F] bg-[#112A12] text-[#C9FFC6]',
+  B: 'border-[#F3B23A] bg-[#38220D] text-[#FBD77B]',
+  Utility: 'border-[#A97922] bg-[#38220D] text-[#FBD77B]',
+  Watch: 'border-[#3A2A24] bg-[#201611] text-[#D5C6B7]',
+};
 
 const guideKeywordLinks = [
   {
@@ -44,6 +52,22 @@ const guideKeywordLinks = [
   {
     keyword: 'Anime Squadron best units tier list',
     href: '/guides/best-units-tier-list',
+  },
+  {
+    keyword: 'Anime Squadron 0.5 tier list',
+    href: '/guides/update-0-5-tier-list',
+  },
+  {
+    keyword: 'Anime Squadron Gogeta',
+    href: '/guides/how-to-get-gogeta-gometa',
+  },
+  {
+    keyword: 'Anime Squadron Falcon',
+    href: '/guides/falcon-guide',
+  },
+  {
+    keyword: 'Anime Squadron Berserker',
+    href: '/guides/berserker-guide',
   },
   {
     keyword: 'Anime Squadron secret units guide',
@@ -79,11 +103,39 @@ const guideKeywordLinks = [
   },
 ];
 
+const updateHighlights = [
+  {
+    title: 'New UPD 0.5 codes',
+    body: 'Copy the newest maintenance, Eclipse, and CCU reward codes before spending rerolls.',
+    href: '/codes',
+    icon: ClipboardList,
+  },
+  {
+    title: 'Berserker enters S Tier',
+    body: 'Treat Berserker as a 0.5 DPS target only after it beats your current carry test.',
+    href: '/guides/berserker-guide',
+    icon: Swords,
+  },
+  {
+    title: 'Falcon is the utility watch',
+    body: 'Falcon matters when Yen, support, or farm tempo changes a real run.',
+    href: '/guides/falcon-guide',
+    icon: Sparkles,
+  },
+  {
+    title: 'Gogeta means Gometa',
+    body: 'Use the route guide before committing evolution materials, Primal Core, or rare rerolls.',
+    href: '/guides/how-to-get-gogeta-gometa',
+    icon: Trophy,
+  },
+];
+
 export function AnimeSquadronHomePage({ locale }: { locale?: string }) {
   const copy = getAnimeSquadronCopy(locale);
   const latestGuides = guides;
-  const recommendedRoles = unitRoleRankings.filter(
-    (entry) => entry.tier === 'Recommended'
+  const homepageCodes = activeCodes.slice(0, 5);
+  const tierSnapshot = unitTierRankings.filter(
+    (entry) => entry.tier === 'S' || entry.slug === 'falcon-dark'
   );
   const primaryLinks = copy.home.primaryLinks.map((item, index) => ({
     ...item,
@@ -209,6 +261,110 @@ export function AnimeSquadronHomePage({ locale }: { locale?: string }) {
       <AdsterraNativeBanner className="border-[#3A2A24] border-b bg-[#090706]" />
 
       <section className="border-[#3A2A24] border-b bg-[#100B09] py-12">
+        <Container className="grid gap-6 px-4 xl:grid-cols-[1.15fr_0.85fr]">
+          <section className="rounded-lg border border-[#3A2A24] bg-[#130D0B] p-5 md:p-6">
+            <div className="flex flex-wrap items-start justify-between gap-4">
+              <div className="max-w-2xl">
+                <p className="font-semibold uppercase tracking-[0.18em] text-[#37D6D0]">
+                  Active codes
+                </p>
+                <h2 className="mt-2 font-display text-3xl font-black">
+                  Copy the newest Anime Squadron codes first
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-[#D5C6B7]">
+                  {codeCheckSummary.status}. Redeem the UPD 0.5 batch before
+                  using Gems, Trait Shards, Reroll Cubes, Perfect Cubes, or Gold
+                  on a unit.
+                </p>
+              </div>
+              <LastUpdated date={codeCheckSummary.checkedAt} />
+            </div>
+
+            <div className="mt-5 grid gap-3">
+              {homepageCodes.map((item) => (
+                <article
+                  key={item.code}
+                  className="grid gap-3 rounded-lg border border-[#3A2A24] bg-[#090706] p-4 md:grid-cols-[minmax(150px,0.45fr)_1fr_auto] md:items-center"
+                >
+                  <div>
+                    <p className="font-mono text-base font-bold text-[#FFF5EA]">
+                      {item.code}
+                    </p>
+                    <p className="mt-1 text-xs uppercase tracking-wide text-[#F3B23A]">
+                      Checked {item.lastChecked}
+                    </p>
+                  </div>
+                  <p className="text-sm leading-6 text-[#D5C6B7]">
+                    {item.reward}
+                  </p>
+                  <CodeCopyButton code={item.code} />
+                </article>
+              ))}
+            </div>
+
+            <div className="mt-5 flex flex-wrap gap-3">
+              <Button
+                asChild
+                className="bg-[#E03A22] text-[#FFF5EA] hover:bg-[#FF5538]"
+              >
+                <LocaleLink href="/codes">Open all codes</LocaleLink>
+              </Button>
+              <Button asChild variant="outline">
+                <LocaleLink href="/guides/codes-redeem-guide">
+                  Redeem guide
+                </LocaleLink>
+              </Button>
+            </div>
+          </section>
+
+          <section className="rounded-lg border border-[#3A2A24] bg-[#130D0B] p-5 md:p-6">
+            <p className="font-semibold uppercase tracking-[0.18em] text-[#37D6D0]">
+              UPD 0.5
+            </p>
+            <h2 className="mt-2 font-display text-3xl font-black">
+              What's new in the current meta
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-[#D5C6B7]">
+              The update is mainly about new codes, Berserker damage checks,
+              Falcon utility, and the Gogeta/Gometa route. Use these pages
+              before moving rare rerolls or gear materials.
+            </p>
+
+            <div className="mt-5 grid gap-3">
+              {updateHighlights.map((item) => (
+                <LocaleLink
+                  key={item.href}
+                  href={item.href}
+                  className="grid gap-3 rounded-lg border border-[#3A2A24] bg-[#090706] p-4 transition hover:border-[#37D6D0] md:grid-cols-[36px_1fr]"
+                >
+                  <item.icon className="size-7 text-[#F3B23A]" />
+                  <span>
+                    <span className="block font-display text-lg font-bold text-[#FFF5EA]">
+                      {item.title}
+                    </span>
+                    <span className="mt-1 block text-sm leading-6 text-[#D5C6B7]">
+                      {item.body}
+                    </span>
+                  </span>
+                </LocaleLink>
+              ))}
+            </div>
+
+            <div className="mt-5 flex flex-wrap gap-3">
+              <Button asChild variant="outline">
+                <LocaleLink href="/guides/update-0-5-tier-list">
+                  Read 0.5 tier guide
+                </LocaleLink>
+              </Button>
+              <Button asChild variant="outline">
+                <LocaleLink href="/tier-list">Open tier list</LocaleLink>
+              </Button>
+            </div>
+          </section>
+        </Container>
+      </section>
+
+      <section className="border-[#3A2A24] border-b bg-[#100B09] py-12">
         <Container className="grid gap-6 px-4 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="font-semibold uppercase tracking-[0.18em] text-[#37D6D0]">
@@ -316,27 +472,63 @@ export function AnimeSquadronHomePage({ locale }: { locale?: string }) {
             </h2>
           </div>
           <div className="grid gap-4 lg:grid-cols-2">
-            {recommendedRoles.map((entry) => (
+            {tierSnapshot.map((entry) => (
               <article
                 key={entry.slug}
                 className="rounded-lg border border-[#3A2A24] bg-[#130D0B] p-5"
               >
                 <div className="flex flex-wrap items-center gap-2">
-                  <TierBadge tier={entry.tier} />
-                  <Badge className="bg-[#E03A22] text-[#FFF5EA]">
-                    {entry.role}
+                  <Badge
+                    variant="outline"
+                    className={tierBadgeClassName[entry.tier]}
+                  >
+                    {entry.tier} Tier
                   </Badge>
+                  {entry.roleFit.slice(0, 2).map((role) => (
+                    <Badge
+                      key={role}
+                      variant="outline"
+                      className="border-[#574033] text-[#FFF5EA]"
+                    >
+                      {role}
+                    </Badge>
+                  ))}
                 </div>
                 <h3 className="mt-4 font-display text-2xl font-bold">
-                  {entry.decision}
+                  {entry.name}
                 </h3>
-                <ul className="mt-4 space-y-2 text-sm leading-7 text-[#D5C6B7]">
-                  {entry.buildNotes.map((note) => (
-                    <li key={note}>- {note}</li>
+                <p className="mt-2 text-xs uppercase tracking-wide text-[#F3B23A]">
+                  {entry.aliases.join(', ')}
+                </p>
+                <p className="mt-4 text-sm leading-7 text-[#D5C6B7]">
+                  {entry.reason}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {entry.bestFor.map((item) => (
+                    <Badge
+                      key={item}
+                      variant="outline"
+                      className="border-[#574033] text-[#D5C6B7]"
+                    >
+                      {item}
+                    </Badge>
                   ))}
-                </ul>
+                </div>
               </article>
             ))}
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <Button
+              asChild
+              className="bg-[#E03A22] text-[#FFF5EA] hover:bg-[#FF5538]"
+            >
+              <LocaleLink href="/tier-list">Open full tier list</LocaleLink>
+            </Button>
+            <Button asChild variant="outline">
+              <LocaleLink href="/guides/update-0-5-tier-list">
+                Read UPD 0.5 guide
+              </LocaleLink>
+            </Button>
           </div>
         </Container>
       </section>

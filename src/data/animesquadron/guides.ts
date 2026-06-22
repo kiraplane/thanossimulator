@@ -438,6 +438,437 @@ export const guides: Guide[] = [
     ],
   },
   {
+    slug: 'update-0-5-tier-list',
+    title: 'Anime Squadron UPD 0.5 Tier List Guide',
+    seoTitle: 'Anime Squadron 0.5 Tier List - Berserker, Falcon, Gogeta',
+    seoDescription:
+      'Read the Anime Squadron UPD 0.5 tier list guide for Berserker, Falcon, Gogeta/Gometa, Skeleton Knight, Caska, Fastwagon, and gear planning.',
+    summary:
+      'UPD 0.5 pushed the tier conversation toward Berserker, Falcon, Skeleton Knight, Caska, and the older premium names such as Gometa, Madora, Woo, and Puppeteer. Use this guide as the patch-specific layer on top of the main tier list.',
+    category: 'Tier List',
+    difficulty: 'Intermediate',
+    coverImageUrl: cover,
+    publishedAt: '2026-06-22',
+    updatedAt: '2026-06-22',
+    sourceStrategy: 'guide_site_crosscheck',
+    sourceNotes:
+      'Built from June 22, 2026 checks of official UPD 0.5 title signals and multiple current tier-list competitors. Exact unit values should still be verified in-game after balance changes.',
+    videoSearchQueries: [
+      'Anime Squadron 0.5 tier list',
+      'Anime Squadron Berserker tier list',
+      'Anime Squadron Falcon unit',
+      'Anime Squadron Gogeta Gometa tier list',
+    ],
+    tags: ['UPD 0.5', 'Tier List', 'Meta'],
+    relatedRoutes: [
+      '/tier-list',
+      '/units',
+      '/guides/falcon-guide',
+      '/guides/how-to-get-gogeta-gometa',
+      '/guides/berserker-guide',
+      '/guides/gear-crafting-guide',
+    ],
+    body: [
+      {
+        heading: 'What changed in UPD 0.5',
+        paragraphs: [
+          'Anime Squadron UPD 0.5 changed the search demand from a generic tier list into a patch-specific question. Players are looking for Berserker, Falcon, Gogeta/Gometa, gear, and whether older premium carries still deserve rerolls.',
+          'The safest read is that 0.5 added new targets without deleting the old rule: build a unit because it solves a role. A new name matters only if it changes wave clear, boss damage, farm tempo, support value, or hard-stage stability.',
+        ],
+      },
+      {
+        heading: 'Top damage targets to watch',
+        paragraphs: [
+          'Gometa/Gogeta still sits in the premium carry conversation because current lists keep it near the top and route guides describe it as a serious evolution target. Berserker is the new 0.5 pressure point because competitor updates place Berserker/Enraged with other top DPS units.',
+          'Madora, Woo, and Puppeteer remain important comparison points. If a player already has one of those built, the question is not "is Berserker new?" but "does Berserker beat my current carry enough to justify rerolls and gear?"',
+        ],
+        bullets: [
+          'Gometa/Gogeta: premium carry and boss-damage target with an expensive route.',
+          'Berserker: new 0.5 DPS target that needs investment verification.',
+          'Madora: strong boss/burn signal in several current tier lists.',
+          'Woo and Puppeteer: still useful high-end reference points for carry value.',
+        ],
+      },
+      {
+        heading: 'Falcon is the 0.5 utility question',
+        paragraphs: [
+          'Falcon demand is different from pure DPS demand. Current source checks describe Falcon around damage, execute, farm, support, or Yen-style value, which means the unit is most interesting when economy or support changes the run.',
+          'If your account already clears waves but reaches expensive upgrades too late, Falcon deserves testing. If your account cannot survive basic pressure, Falcon may not be the first place to spend rare rerolls.',
+        ],
+      },
+      {
+        heading: 'Skeleton Knight, Caska, and role caution',
+        paragraphs: [
+          'Skeleton Knight/Resonance appears as a stability pick in current 0.5 checks: tank, support, or hybrid value rather than a universal first carry. Caska/Resilience is worth covering because players search the new unit names, but current signals are not strong enough to treat it as a premium reroll target.',
+          'Use these units to fill a role, not to chase a name. If Skeleton Knight keeps a hard stage stable, it has value. If Caska helps early or mid progression, use it while it works and avoid locking rare materials into it too early.',
+        ],
+      },
+      {
+        heading: 'How to spend after reading the 0.5 tier list',
+        paragraphs: [
+          'First, check whether your current wall is damage, economy, support, or survival. Second, match the new unit to that wall. Third, spend only the material that directly improves the test. A DPS unit may need traits and gear; Falcon may need a farm or support test; Skeleton Knight may need placement testing before rerolls.',
+          'The main tier list page should stay role-first, while this 0.5 page explains the patch names. Use both together before moving Perfect Cubes, rare trait materials, or expensive gear recipes.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Who is the best Anime Squadron UPD 0.5 unit?',
+        answer:
+          'Berserker and Gometa/Gogeta are the strongest current DPS signals, while Falcon is the most important utility-farm signal. The best unit for your account still depends on the role you are missing.',
+      },
+      {
+        question: 'Is Falcon better than Berserker?',
+        answer:
+          'They solve different problems. Berserker is a damage target, while Falcon is more useful when farm/support value changes your clear or upgrade tempo.',
+      },
+      {
+        question: 'Should I reroll for every new 0.5 unit?',
+        answer:
+          'No. Reroll only when the unit has a role in your current squad and the upgrade changes a real run.',
+      },
+    ],
+  },
+  {
+    slug: 'falcon-guide',
+    title: 'Anime Squadron Falcon Guide',
+    seoTitle: 'Anime Squadron Falcon Guide - Dark Falcon Build and Value',
+    seoDescription:
+      'Use this Anime Squadron Falcon guide to decide when Falcon or Dark Falcon is worth building for Yen, support, execute value, gear, and UPD 0.5 progression.',
+    summary:
+      'Falcon is not just a name to chase. In the 0.5 meta, Falcon is most useful when its support, farm, or execute-style value changes your upgrade tempo or makes a harder run safer.',
+    category: 'Units',
+    difficulty: 'Intermediate',
+    coverImageUrl: cover,
+    publishedAt: '2026-06-22',
+    updatedAt: '2026-06-22',
+    sourceStrategy: 'guide_site_crosscheck',
+    sourceNotes:
+      'Built from current 0.5 tier-list checks that describe Falcon/Dark Falcon as a farm, support, DPS, or execute-adjacent unit. Exact values should be verified in the live game UI.',
+    videoSearchQueries: [
+      'Anime Squadron Falcon guide',
+      'Anime Squadron Dark Falcon',
+      'Anime Squadron Falcon build',
+      'Anime Squadron Falcon tier list',
+    ],
+    tags: ['Falcon', 'UPD 0.5', 'Farm'],
+    relatedRoutes: [
+      '/units',
+      '/tier-list',
+      '/guides/update-0-5-tier-list',
+      '/guides/gear-crafting-guide',
+      '/guides/trait-shards-reroll-cubes-farm',
+    ],
+    body: [
+      {
+        heading: 'What Falcon is for',
+        paragraphs: [
+          'Falcon search demand rose with UPD 0.5 because the unit sits in a useful middle space: it can be discussed as damage, support, and farm value rather than as a simple carry. That makes Falcon worth a separate guide.',
+          'The practical question is whether Falcon changes the run. If extra Yen, support utility, execute-style value, or debuff resistance lets your squad upgrade faster or survive a harder stage, Falcon is doing a job.',
+        ],
+      },
+      {
+        heading: 'When Falcon is worth building',
+        paragraphs: [
+          'Build Falcon when your account already has a damage plan and needs better tempo. Falcon is strongest when the benefit converts into earlier placements, earlier upgrades, safer boss timing, or more repeatable farming.',
+          'Do not build Falcon only because a tier list marks it high. If your current wall is raw wave clear and Falcon does not fix that wall faster than a carry upgrade, it can wait.',
+        ],
+        bullets: [
+          'Good sign: Falcon makes expensive upgrades arrive earlier.',
+          'Good sign: Falcon keeps value through long waves instead of only the opener.',
+          'Bad sign: your account still lacks a real main carry.',
+          'Bad sign: you are spending rare rerolls before testing Falcon in the target mode.',
+        ],
+      },
+      {
+        heading: 'Trait and gear direction',
+        paragraphs: [
+          'Falcon should not receive a random trait just because it is new. Choose the role first. If you use Falcon for farm tempo, economy or support logic matters. If you use Falcon as secondary damage, damage and cooldown logic matter more.',
+          'Gear should follow the same rule. A farm-support Falcon does not need the same gear plan as a pure DPS unit. Use gear only after Falcon has proved which role it actually plays on your account.',
+        ],
+      },
+      {
+        heading: 'How to test Falcon safely',
+        paragraphs: [
+          'Run the same stage twice: once with your current team and once with Falcon in the slot it would replace. Watch upgrade timing, leak timing, boss health, and whether the clear becomes easier without over-upgrading Falcon.',
+          'If the test improves, Falcon can move into the active squad plan. If the test does not improve, keep Falcon as a watch unit and spend materials on the role that is actually blocking progress.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Is Falcon good in Anime Squadron?',
+        answer:
+          'Falcon is a strong 0.5 watch unit when farm, support, or execute-style value changes your run. It is not automatically the first carry for every account.',
+      },
+      {
+        question: 'Should Falcon get my first rare rerolls?',
+        answer:
+          'Only if Falcon has already improved a real clear or farm loop. Otherwise save rare rerolls for a confirmed carry or boss-damage unit.',
+      },
+      {
+        question: 'What role does Dark Falcon play?',
+        answer:
+          'Current public data points to hybrid utility: support, farm tempo, and some damage value. Verify exact live values before committing expensive materials.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-get-gogeta-gometa',
+    title: 'How to Get Gogeta in Anime Squadron',
+    seoTitle: 'How to Get Gogeta in Anime Squadron - Gometa Route Guide',
+    seoDescription:
+      'Learn how to get Gogeta in Anime Squadron, why the unit is called Gometa in-game, what prerequisites to expect, and how to avoid wasting evolution materials.',
+    summary:
+      'Players search for Gogeta, but Anime Squadron often refers to the unit as Gometa. Treat the route as a long evolution project: prepare prerequisite units, Infinite Mode and Raid milestones, Primal Core, and a material budget before committing.',
+    category: 'Units',
+    difficulty: 'Advanced',
+    coverImageUrl: cover,
+    publishedAt: '2026-06-22',
+    updatedAt: '2026-06-22',
+    sourceStrategy: 'guide_site_crosscheck',
+    sourceNotes:
+      'Built from current Gogeta/Gometa route demand and a June 2026 route guide. Specific material counts can change, so the article frames them as checklist leads to verify in-game.',
+    videoSearchQueries: [
+      'how to get Gogeta in Anime Squadron',
+      'Anime Squadron Gometa guide',
+      'Anime Squadron SSJ4 Gogeta',
+      'Anime Squadron Primal Core',
+    ],
+    tags: ['Gogeta', 'Gometa', 'Evolution'],
+    relatedRoutes: [
+      '/tier-list',
+      '/units',
+      '/guides/secret-units-guide',
+      '/guides/update-0-5-tier-list',
+      '/guides/gems-gold-spending-guide',
+      '/guides/trait-shards-reroll-cubes-farm',
+    ],
+    body: [
+      {
+        heading: 'Gogeta search usually means Gometa',
+        paragraphs: [
+          'Anime Squadron players often search "Gogeta" because that is the familiar anime reference. In game and guide coverage, the target is commonly written as Gometa or Gometa (SSJ4). This page uses both names so players can connect the search term to the in-game route.',
+          'Gometa is not a casual first-hour target. Current tier-list and route checks frame it as a premium carry or boss-damage project that needs prerequisite units, milestones, and evolution materials.',
+        ],
+      },
+      {
+        heading: 'Route checklist before spending',
+        paragraphs: [
+          'The route lead most current guides agree on starts with preparing Goki and Vegata style prerequisite units, then moving through SSJ4/evolution work, Infinite Mode progress, Raid stages, and a Primal Core style requirement before the final Gometa step.',
+          'Use that as a checklist, not as a reason to empty the account immediately. Before spending, open the live game UI and confirm the material names, counts, and mode requirements because Anime Squadron is still updating quickly.',
+        ],
+        bullets: [
+          'Confirm the in-game name: Gogeta search demand usually maps to Gometa.',
+          'Prepare the prerequisite units before chasing final materials.',
+          'Expect Infinite Mode and Raid progress to matter.',
+          'Verify Primal Core and evolution material requirements in-game.',
+          'Do not spend Perfect Cubes until Gometa is clearly part of your main plan.',
+        ],
+      },
+      {
+        heading: 'When Gometa is worth the chase',
+        paragraphs: [
+          'Gometa is worth chasing when your account can support a long premium carry route without freezing normal progress. If every material goes into a future unit while your current squad cannot farm, the chase becomes too expensive.',
+          'A better route is to keep one active carry farming, then move extra resources into Gometa preparation. That way the account still earns Gems, Gold, rerolls, and mode rewards while the long evolution route comes together.',
+        ],
+      },
+      {
+        heading: 'How to build after unlocking',
+        paragraphs: [
+          'After unlocking Gometa, test the unit before rerolling heavily. If it improves wave clear, boss damage, or higher-value farming, then traits, stat rerolls, and gear have a clear purpose.',
+          'If Gometa is not yet outperforming your current carry, the problem may be upgrade level, gear, support, or missing materials rather than the unit itself. Test one variable at a time before spending rare resources.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Is Gogeta called Gometa in Anime Squadron?',
+        answer:
+          'Yes, current public guide data and tier-list coverage commonly use Gometa for the Gogeta-style unit.',
+      },
+      {
+        question: 'Is Gometa the best unit in Anime Squadron?',
+        answer:
+          'Gometa is one of the strongest current carry signals, but the best unit for your account depends on whether you can complete and support the route.',
+      },
+      {
+        question: 'Should beginners chase Gogeta first?',
+        answer:
+          'Most beginners should keep farming with a stable carry while preparing the route, instead of draining all rewards into a long evolution project immediately.',
+      },
+    ],
+  },
+  {
+    slug: 'berserker-guide',
+    title: 'Anime Squadron Berserker Guide',
+    seoTitle: 'Anime Squadron Berserker Guide - Enraged Build and Tier Value',
+    seoDescription:
+      'Plan Anime Squadron Berserker or Berserker Enraged after UPD 0.5 with DPS role checks, gear direction, reroll timing, and tier-list cautions.',
+    summary:
+      'Berserker became one of the clearest UPD 0.5 DPS search opportunities. Build it like a premium damage project: prove the role, then align traits, gear, and rerolls around the stage it improves.',
+    category: 'Units',
+    difficulty: 'Advanced',
+    coverImageUrl: cover,
+    publishedAt: '2026-06-22',
+    updatedAt: '2026-06-22',
+    sourceStrategy: 'guide_site_crosscheck',
+    sourceNotes:
+      'Built from current 0.5 tier-list checks that place Berserker/Enraged among top damage targets. Exact banner and upgrade values should be checked in game.',
+    videoSearchQueries: [
+      'Anime Squadron Berserker guide',
+      'Anime Squadron Berserker Enraged',
+      'Anime Squadron Berserk update',
+      'Anime Squadron 0.5 best units',
+    ],
+    tags: ['Berserker', 'UPD 0.5', 'DPS'],
+    relatedRoutes: [
+      '/tier-list',
+      '/units',
+      '/guides/update-0-5-tier-list',
+      '/guides/gear-crafting-guide',
+      '/guides/traits-reroll-guide',
+    ],
+    body: [
+      {
+        heading: 'Why Berserker matters in 0.5',
+        paragraphs: [
+          'Berserker is the new 0.5 unit name that belongs in the damage conversation. Current tier-list checks place Berserker/Enraged near other premium DPS options, so it deserves a clear upgrade route instead of a vague mention.',
+          'That does not mean every player should instantly move all materials into Berserker. The right question is whether Berserker beats your current damage plan in the mode that matters.',
+        ],
+      },
+      {
+        heading: 'What to test first',
+        paragraphs: [
+          'Test Berserker as a main carry or boss-damage unit. Watch whether it clears waves earlier, removes bosses faster, or lets the squad reach a better reward loop with the same support structure.',
+          'If the unit needs heavy investment before it changes anything, pause and compare it against Gometa, Madora, Woo, Puppeteer, or your current carry. A new patch unit can be excellent and still be too expensive for a young account.',
+        ],
+        bullets: [
+          'Test the same stage before and after adding Berserker.',
+          'Track boss health and leak timing, not just lobby damage.',
+          'Upgrade only until the run changes, then reassess.',
+          'Avoid rare rerolls before the role is proven.',
+        ],
+      },
+      {
+        heading: 'Trait and gear direction',
+        paragraphs: [
+          'Because Berserker is primarily a DPS signal, traits and gear should support damage, cooldown, range, or the specific stat that makes the target stage easier. Do not put economy logic on Berserker unless the build has a very clear reason.',
+          'Gear crafting should wait until Berserker has a permanent or semi-permanent slot. If you are still deciding between Berserker and another carry, keep rare materials flexible.',
+        ],
+      },
+      {
+        heading: 'How Berserker compares to Gometa',
+        paragraphs: [
+          'Gometa/Gogeta is a long evolution project with strong premium-carry signals. Berserker is the new 0.5 DPS target with patch momentum. Which one is better depends on access, material cost, and what your account can build now.',
+          'If Berserker is available and improves your current wall faster, it may be the better immediate project. If you are already deep into Gometa preparation, do not abandon the route only because a new unit is trending.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Is Berserker good in Anime Squadron?',
+        answer:
+          'Yes, current UPD 0.5 tier-list checks treat Berserker/Enraged as a top DPS signal, but you should still test whether it solves your current stage.',
+      },
+      {
+        question: 'Should I gear Berserker first?',
+        answer:
+          'Gear Berserker after it proves a real DPS role. If the unit is still a test slot, save rare gear materials.',
+      },
+      {
+        question: 'Is Berserker better than Gogeta?',
+        answer:
+          'It depends on access and cost. Berserker may be easier to test as a 0.5 DPS target, while Gometa/Gogeta is a longer premium evolution route.',
+      },
+    ],
+  },
+  {
+    slug: 'gacha-bag-reroll-cubes-guide',
+    title: 'Anime Squadron Gacha Bag and Reroll Cubes Guide',
+    seoTitle: 'Anime Squadron Gacha Bag Guide - Reroll Cubes and Rewards',
+    seoDescription:
+      'Use the Anime Squadron Gacha Bag guide to plan Reroll Cubes, Infinite Mode reward checks, Gems, Gold, Trait Rerolls, and safe spending rules.',
+    summary:
+      'Gacha Bag demand is really resource demand: players want Reroll Cubes, Gems, Gold, and trait materials without wasting them. Treat Gacha Bags as a reward route, then spend only on a named unit and a named wall.',
+    category: 'Rewards',
+    difficulty: 'Intermediate',
+    coverImageUrl: cover,
+    publishedAt: '2026-06-22',
+    updatedAt: '2026-06-22',
+    sourceStrategy: 'guide_site_crosscheck',
+    sourceNotes:
+      'Built from current Reroll Cubes and Gacha Bag search demand. Public data suggests Infinite Mode reward relevance, but reward odds and exact pools should be verified in game.',
+    videoSearchQueries: [
+      'Anime Squadron Gacha Bag',
+      'Anime Squadron Reroll Cubes',
+      'Anime Squadron Infinite Mode rewards',
+      'Anime Squadron Trait Rerolls farm',
+    ],
+    tags: ['Gacha Bag', 'Reroll Cubes', 'Rewards'],
+    relatedRoutes: [
+      '/reroll',
+      '/codes',
+      '/game-modes',
+      '/guides/trait-shards-reroll-cubes-farm',
+      '/guides/stat-reroll-guide',
+      '/guides/gems-gold-spending-guide',
+    ],
+    body: [
+      {
+        heading: 'What Gacha Bag demand means',
+        paragraphs: [
+          'When players search for Anime Squadron Gacha Bag, they are usually trying to answer a resource question. They want to know where Reroll Cubes, Gems, Gold, Trait Rerolls, and other upgrade materials come from, and whether the grind is worth it.',
+          'Current public leads connect Gacha Bag style rewards with Infinite Mode and resource farming, but exact pools can change. Use this page as the spending plan and verify the live reward screen before counting on a specific drop.',
+        ],
+      },
+      {
+        heading: 'Farm with a spending target',
+        paragraphs: [
+          'Do not farm Gacha Bags just because the reward name sounds valuable. Farm them because one specific unit needs one specific improvement: a trait attempt, a stat reroll, or a resource push that changes a clear.',
+          'The best resource loop is simple: choose the unit, choose the wall, farm the bag or mode, spend in a small batch, then test the same stage again. If the run does not improve, stop and reconsider the role.',
+        ],
+        bullets: [
+          'Use codes first so you know how many resources are still missing.',
+          'Farm Infinite Mode or reward routes only when they fund a target.',
+          'Spend Reroll Cubes in small batches.',
+          'Save premium materials for units that already have a role.',
+        ],
+      },
+      {
+        heading: 'Reroll Cubes are not free progress',
+        paragraphs: [
+          'Reroll Cubes feel like progress because they create new outcomes, but a reroll on the wrong unit can leave the account weaker than before. Pick a keeper unit before using them.',
+          'If you are deciding between Berserker, Gometa, Falcon, or an older carry, wait until the role is clear. A Reroll Cube should make a confirmed unit better, not help you avoid choosing.',
+        ],
+      },
+      {
+        heading: 'When to stop farming bags',
+        paragraphs: [
+          'Stop when you have enough to test the next improvement. Endless farming can delay the actual decision: which unit is supposed to carry, support, farm, or control the next hard run.',
+          'After each spending batch, test the stage. If the same problem remains, it may be a team-shape issue rather than a resource issue. Go back to units, tier list, and gear planning before farming more.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'What does Gacha Bag give in Anime Squadron?',
+        answer:
+          'Current public leads connect Gacha Bag style rewards with resources such as Gems, Gold, Trait Rerolls, and Reroll Cubes, but the exact live pool should be checked in game.',
+      },
+      {
+        question: 'Where should I use Reroll Cubes?',
+        answer:
+          'Use Reroll Cubes on a keeper unit that already has a role, such as a carry, boss-damage unit, support, or farm unit that improves a real run.',
+      },
+      {
+        question: 'Should I farm Gacha Bags before codes?',
+        answer:
+          'No. Redeem active codes first, then farm only the resources still needed for your next planned upgrade.',
+      },
+    ],
+  },
+  {
     slug: 'secret-units-guide',
     title: 'Anime Squadron Secret Units Guide',
     seoTitle: 'Anime Squadron Secret Units Guide - SSJ4 Gogeta, Shanron, Meta',
@@ -1321,20 +1752,20 @@ export const guides: Guide[] = [
   },
   {
     slug: 'gear-crafting-guide',
-    title: 'Anime Squadron Gear Crafting Guide',
+    title: 'Anime Squadron Gear Crafting Recipes Guide',
     seoTitle: 'Anime Squadron Gear Guide - Crafting Recipes and Unit Fit',
     seoDescription:
-      'Plan Anime Squadron gear crafting with recipe caution, material routing, best-unit fit, reroll timing, and when to craft or wait.',
+      'Plan Anime Squadron gear crafting recipes with material rarity routes, act farming, unit fit, reroll timing, and when to craft or wait.',
     summary:
-      'Gear should support a unit that already has a job. Craft after you know the carry, role, and bottleneck instead of spending materials on the first recipe you see.',
+      'Gear should support a unit that already has a job. Current recipe sources point to act-based material rarity routing, so craft after you know the unit role, missing material, and stage bottleneck.',
     category: 'Units',
     difficulty: 'Intermediate',
     coverImageUrl: cover,
     publishedAt: CHECKED_AT,
-    updatedAt: '2026-06-19',
+    updatedAt: '2026-06-22',
     sourceStrategy: 'guide_site_crosscheck',
     sourceNotes:
-      'Created from current gear and crafting recipe demand. Competitor recipe pages are used as leads; exact recipe values should be verified before turning this into a fixed database.',
+      'Updated from June 22, 2026 gear recipe source checks. Recipe pages are used as leads for material routing and gear examples; exact values should still be verified in the live crafting UI.',
     videoSearchQueries: [
       'Anime Squadron gear guide',
       'Anime Squadron gear crafting recipes',
@@ -1358,10 +1789,24 @@ export const guides: Guide[] = [
         ],
       },
       {
+        heading: 'Use act rarity as your first material route',
+        paragraphs: [
+          'Current gear recipe sources point to an act-based rarity pattern for farming materials. Treat it as a routing lead: early acts cover lower-rarity materials, later acts move into higher-rarity materials, and the exact item names should be confirmed in the crafting UI before spending.',
+          'The useful planning pattern is Rare materials from Acts 1-2, Epic from Acts 3-4, Legendary from Acts 5-6, Mythic from Acts 7-8, and Secret-style materials from Acts 9-10. If the game updates a world or recipe, trust the live UI over any static guide.',
+        ],
+        bullets: [
+          'Rare material route: check Acts 1-2 first.',
+          'Epic material route: check Acts 3-4 first.',
+          'Legendary material route: check Acts 5-6 first.',
+          'Mythic material route: check Acts 7-8 first.',
+          'Secret material route: check Acts 9-10 and late progression requirements.',
+        ],
+      },
+      {
         heading: 'Use recipes as a spending plan',
         paragraphs: [
-          'Current search demand around gear crafting recipes means players want exact tables. The safer route is to use recipes as a plan first: identify the missing material, the unit role it helps, and the run where the craft should matter.',
-          'Do not craft every recipe just because it appears in a guide. Craft the item that changes your next wall, then test the run before spending again.',
+          'Current search demand around gear crafting recipes means players want exact tables, but exact recipe numbers can shift during early updates. Use recipes as a spending plan first: identify the missing material, the unit role it helps, and the run where the craft should matter.',
+          'Do not craft every recipe just because it appears in a guide. Craft the item that changes your next wall, then test the run before spending again. This matters even more for Falcon, Berserker, Gometa, and other units where the role can be different from account to account.',
         ],
         bullets: [
           'Damage gear belongs on a unit that actually carries waves or bosses.',
@@ -1378,10 +1823,17 @@ export const guides: Guide[] = [
         ],
       },
       {
+        heading: 'Gear examples to verify before committing',
+        paragraphs: [
+          'Public recipe sources repeatedly mention high-interest gear such as Hogyoku-style, Devil Sword or Devil Amulet-style, Ninja set, Monarch Daggers, and Money Maker-style economy gear. Use these names as search and crafting leads, not as permanent values.',
+          'The best next site upgrade would be a structured gear database after enough recipe values stay stable across the live UI and multiple current sources. Until then, this page should help players choose the right target and avoid spending rare materials on a unit that may leave the team.',
+        ],
+      },
+      {
         heading: 'When this should become a recipe database',
         paragraphs: [
           'A full gear database is worth building only after recipes, material names, and patch behavior are stable enough to maintain. Until then, this page should teach the crafting decision and link players to units, tier list, traits, and reroll planning.',
-          'If gear search demand keeps growing and reliable recipe data stays consistent across official or high-confidence sources, the next step is a structured gear table with material, role, target unit type, and confidence notes.',
+          'If gear search demand keeps growing and reliable recipe data stays consistent across the live game UI and high-confidence sources, the next step is a structured gear table with material, role, target unit type, act route, and confidence notes.',
         ],
       },
     ],
@@ -1390,6 +1842,11 @@ export const guides: Guide[] = [
         question: 'What gear should I craft first in Anime Squadron?',
         answer:
           'Craft gear for the unit that already solves your current wall. For most players that means the main carry or the support that keeps the carry working.',
+      },
+      {
+        question: 'Where do Anime Squadron crafting materials come from?',
+        answer:
+          'Current recipe sources point to act-based material routing, with lower rarities in earlier acts and higher rarities in later acts. Always confirm the exact recipe in the live crafting UI.',
       },
       {
         question: 'Are Anime Squadron gear recipes final?',

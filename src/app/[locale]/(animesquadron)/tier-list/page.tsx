@@ -12,7 +12,7 @@ import { Button } from '@/components/ui/button';
 import { getAnimeSquadronCopy } from '@/data/animesquadron/localized-copy';
 import {
   unitNameWatchlist,
-  unitRoleRankings,
+  unitTierRankings,
 } from '@/data/animesquadron/tier-list';
 import { LocaleLink } from '@/i18n/navigation';
 import { constructMetadata } from '@/lib/metadata';
@@ -45,11 +45,11 @@ export default async function TierListPage({
   const itemList = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    itemListElement: unitRoleRankings.map((entry, index) => ({
+    itemListElement: unitTierRankings.map((entry, index) => ({
       '@type': 'ListItem',
       position: index + 1,
-      name: entry.role,
-      description: entry.decision,
+      name: `${entry.tier} Tier - ${entry.name}`,
+      description: entry.reason,
     })),
   };
 
@@ -127,6 +127,55 @@ export default async function TierListPage({
             </Button>
             <Button asChild variant="outline">
               <LocaleLink href="/codes">{copy.tierList.codesButton}</LocaleLink>
+            </Button>
+          </div>
+        </section>
+
+        <section className="rounded-lg border border-[#3A2A24] bg-[#130D0B] p-6">
+          <div className="flex flex-wrap items-center gap-2">
+            <Badge className="bg-[#F3B23A] text-[#090706]">UPD 0.5</Badge>
+            <Badge variant="outline" className="border-[#574033] text-white">
+              Data refreshed June 22, 2026
+            </Badge>
+          </div>
+          <h2 className="mt-4 font-display text-2xl font-bold">
+            UPD 0.5 Meta Notes
+          </h2>
+          <div className="mt-4 grid gap-4 text-sm leading-7 text-[#D5C6B7] md:grid-cols-3">
+            <p>
+              <strong className="text-[#FFF5EA]">Berserker:</strong> New 0.5 DPS
+              signal. Test as a carry or boss-damage project before moving rare
+              rerolls.
+            </p>
+            <p>
+              <strong className="text-[#FFF5EA]">Falcon:</strong> Utility and
+              farm signal. It is strongest when Yen, support, or tempo changes a
+              real run.
+            </p>
+            <p>
+              <strong className="text-[#FFF5EA]">Gogeta/Gometa:</strong> Still a
+              premium carry route, but the evolution and material cost make it a
+              long project.
+            </p>
+          </div>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Button asChild variant="outline">
+              <LocaleLink href="/guides/update-0-5-tier-list">
+                Read 0.5 guide
+              </LocaleLink>
+            </Button>
+            <Button asChild variant="outline">
+              <LocaleLink href="/guides/falcon-guide">Falcon guide</LocaleLink>
+            </Button>
+            <Button asChild variant="outline">
+              <LocaleLink href="/guides/how-to-get-gogeta-gometa">
+                Gogeta route
+              </LocaleLink>
+            </Button>
+            <Button asChild variant="outline">
+              <LocaleLink href="/guides/berserker-guide">
+                Berserker guide
+              </LocaleLink>
             </Button>
           </div>
         </section>

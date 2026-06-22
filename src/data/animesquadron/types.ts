@@ -36,6 +36,7 @@ export type UnitRole =
   | 'Starter Filler';
 
 export type PriorityTier = 'Recommended' | 'Situational' | 'Data Pending';
+export type UnitTierRank = 'S' | 'A' | 'B' | 'Utility' | 'Watch';
 
 export interface UnitRoleRanking {
   slug: string;
@@ -60,6 +61,20 @@ export interface UnitNameWatch {
   priority: PriorityTier;
   decision: string;
   evidence: string;
+  sourceLabels: string[];
+  sourceConfidence: Confidence;
+}
+
+export interface UnitTierRanking {
+  slug: string;
+  name: string;
+  aliases: string[];
+  tier: UnitTierRank;
+  roleFit: UnitRole[];
+  bestFor: string[];
+  reason: string;
+  investWhen: string;
+  caution: string;
   sourceLabels: string[];
   sourceConfidence: Confidence;
 }
