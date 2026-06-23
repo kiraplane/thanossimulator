@@ -1,7 +1,7 @@
 import { sources } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-06-22';
+export const CODE_CHECKED_AT = '2026-06-23';
 
 const coreSourceLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}, ${sources.radioTimesCodes.label}`;
 const inactiveConflictLabel = `${sources.beebomCodes.label}, ${sources.destructoidCodes.label}, ${sources.proGameGuidesCodes.label}; older trackers may still show stale entries`;
@@ -63,22 +63,22 @@ export const codes: GameCode[] = [
     code: '50kCCU!',
     reward:
       '100 Trait Shards, 1,000 Gold, 2,000 Gems, 25 Stat Cubes, and 2 Perfect Cubes',
-    status: 'active',
+    status: 'watch',
     firstSeen: '2026-06-19',
     lastChecked: CODE_CHECKED_AT,
-    sourceLabel: june22SourceLabel,
+    sourceLabel: newestSourceLabel,
     notes:
-      'Source-checked CCU milestone code, rechecked June 22. Copy exactly from the active table before trying variants.',
+      'June 23 source conflict: Beebom and Pro Game Guides still list it active, while Radio Times moved it to expired. Try it after the newest UPD 0.5 codes and mark it inactive if the game rejects it.',
   },
   {
     code: '10MilVisits!',
     reward: '50 Trait Shards and 2,000 Gold',
-    status: 'active',
+    status: 'watch',
     firstSeen: '2026-06-19',
     lastChecked: CODE_CHECKED_AT,
-    sourceLabel: june22SourceLabel,
+    sourceLabel: newestSourceLabel,
     notes:
-      'Source-checked visit milestone code, rechecked June 22 across current trackers.',
+      'June 23 source conflict: Beebom keeps it in the working set, while Radio Times lists it expired. Treat it as a try-last code until an in-game check confirms the result.',
   },
   {
     code: '40kCCU!',
@@ -278,7 +278,7 @@ export const watchCodes = codes.filter((code) => code.status === 'watch');
 
 export const codeCheckSummary = {
   checkedAt: CODE_CHECKED_AT,
-  status: `${activeCodes.length} active codes tracked`,
+  status: `${activeCodes.length} active codes and ${watchCodes.length} watchlist codes tracked`,
   sourcesChecked: [
     sources.robloxGame,
     sources.beebomCodes,
@@ -291,6 +291,7 @@ export const codeCheckSummary = {
   reviewNotes: [
     'Anime Squadron codes are case-sensitive; copy them exactly, including punctuation.',
     'Redeem the UPD 0.5 batch first: Tysm80kCCU!, Tysm60kCCU!, LongMaintenance!, Eclipse!, and UPD0.5!.',
+    '50kCCU and 10MilVisits moved to watch after the June 23 source check found active/expired disagreement.',
     'Tysm10kCCU moved from watch to expired after the June 22 source check.',
     'Older launch codes stay out of the active table unless at least two current sources agree they still work.',
     'Use codes before rerolling traits or stats so the free shards, cubes, gems, and gold shape your first real spend.',
