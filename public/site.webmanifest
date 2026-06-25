@@ -1,11 +1,11 @@
 {
-  "name": "Anime Squadron Wiki",
-  "short_name": "AnimeSquad Wiki",
-  "description": "Anime Squadron Wiki with active codes, tier list decisions, unit roles, traits, rerolls, game modes, Discord status, and Roblox safety guides.",
+  "name": "Chrono CCG Wiki",
+  "short_name": "Chrono CCG Wiki",
+  "description": "Chrono CCG Wiki for open beta rules, Divers, Timelines, syndicates, decks, card lists, codes, Discord, Steam, and Epic guides.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#090706",
-  "theme_color": "#e03a22",
+  "background_color": "#0A0D10",
+  "theme_color": "#63E6DD",
   "icons": [
     {
       "src": "/favicon-32x32.png",

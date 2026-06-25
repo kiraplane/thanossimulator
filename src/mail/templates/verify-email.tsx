@@ -35,6 +35,6 @@ export default function VerifyEmail({
 VerifyEmail.PreviewProps = {
   locale: routing.defaultLocale,
   messages: defaultMessages,
-  url: 'https://www.animesquadron.wiki',
+  url: 'https://www.chronoccg.wiki',
   name: 'username',
 };

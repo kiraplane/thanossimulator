@@ -12,28 +12,27 @@ export enum Routes {
   TermsOfService = '/terms',
   Disclaimer = '/disclaimer',
 
-  // Anime Squadron guide routes
+  // Chrono CCG wiki routes
+  Guides = '/guides',
+  Rules = '/rules',
+  Syndicates = '/syndicates',
+  Decks = '/decks',
+  Cards = '/cards',
+  Tools = '/tools',
+  CardFinder = '/tools/card-finder',
+  DeckChecker = '/tools/deck-checker',
+  CurveAnalyzer = '/tools/curve-analyzer',
   Codes = '/codes',
   TierList = '/tier-list',
-  BestTeamCombo = '/best-team-combo',
-  ResourceCalculator = '/resource-calculator',
-  TraitRerollCalculator = '/trait-reroll-calculator',
-  WooPityCalculator = '/woo-pity-calculator',
-  SecretUnitsTracker = '/secret-units-tracker',
-  Units = '/units',
-  Traits = '/traits',
-  GameModes = '/game-modes',
-  Reroll = '/reroll',
+  Download = '/download',
   Discord = '/discord',
-  Guides = '/guides',
   Updates = '/updates',
   BeginnerGuide = '/guides/beginner-guide',
   CodesGuide = '/guides/codes-redeem-guide',
-  UnitsGuide = '/guides/best-units-tier-list',
-  TraitsGuide = '/guides/traits-reroll-guide',
-  RerollGuide = '/guides/stat-reroll-guide',
-  ModesGuide = '/guides/game-modes-rewards-guide',
-  Download = '/download',
+  DeckbuildingGuide = '/guides/diver-deckbuilding-guide',
+  PriorityGuide = '/guides/timeline-priority-guide',
+  StarterDecksGuide = '/guides/starter-decks-guide',
+  SyndicatesGuide = '/guides/syndicates-guide',
 
   // auth routes
   Login = '/auth/login',
@@ -80,4 +79,4 @@ export const protectedRoutes = [
  * The default redirect path after logging in
  */
 export const DEFAULT_LOGIN_REDIRECT =
-  websiteConfig.routes.defaultLoginRedirect ?? Routes.Dashboard;
+  websiteConfig.routes.defaultLoginRedirect ?? Routes.Root;

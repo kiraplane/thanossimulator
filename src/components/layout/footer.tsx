@@ -131,8 +131,8 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
           </span>
 
           <span className="text-muted-foreground text-sm">
-            Unofficial fan wiki. Not affiliated with Roblox, Komplex Studio, or
-            the official Anime Squadron team.
+            Independent guide site. Not affiliated with Infinite or Bust Games
+            Inc. or the official Chrono CCG team.
           </span>
         </Container>
       </div>

@@ -10,9 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return constructMetadata({
-    title: 'Privacy Policy | Anime Squadron Wiki',
+    title: 'Privacy Policy | Chrono CCG Wiki',
     description:
-      'Privacy policy for the unofficial Anime Squadron Wiki and guide site.',
+      'Privacy policy for the unofficial Chrono CCG Wiki and guide site.',
     locale,
     pathname: '/privacy',
   });
@@ -24,9 +24,9 @@ export default function PrivacyPolicyPage() {
       <Container className="max-w-3xl space-y-6 px-4">
         <h1 className="font-display text-4xl font-black">Privacy Policy</h1>
         <p className="leading-8 text-[#CBD5E1]">
-          Anime Squadron Wiki is an unofficial fan guide. We do not require
-          accounts for browsing codes status, tier lists, dragon profiles,
-          guides, campaign notes, resource pages, or alliance pages.
+          Chrono CCG Wiki is an unofficial fan guide. We do not require accounts
+          for browsing codes status, tier lists, dragon profiles, guides,
+          campaign notes, resource pages, or alliance pages.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
           Standard analytics or hosting logs may record aggregate traffic data
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
           asset files or provide downloads as standalone packs.
         </p>
         <p className="leading-8 text-[#CBD5E1]">
-          Privacy questions can be sent to hello@animesquadron.wiki.
+          Privacy questions can be sent to hello@chronoccg.wiki.
         </p>
       </Container>
     </div>

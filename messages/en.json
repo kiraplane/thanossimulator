@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "name": "Anime Squadron Wiki",
-    "title": "Anime Squadron Wiki - Codes, Tier List and Guides",
-    "description": "Anime Squadron Wiki for codes, unit tier lists, traits, stat rerolls, game modes, Discord links, and beginner guides."
+    "name": "Chrono CCG Wiki",
+    "title": "Chrono CCG Wiki - Guides, Codes, Decks and Rules",
+    "description": "Chrono CCG Wiki for open beta rules, Divers, Timelines, syndicates, decks, card lists, codes, Discord, Steam, and Epic guides."
   },
   "Common": {
     "premium": "Premium",
@@ -54,7 +54,7 @@
   },
   "PricingPage": {
     "title": "Pricing",
-    "description": "Optional supporter plans for keeping Anime Squadron Wiki maintained",
+    "description": "Optional supporter plans for keeping Chrono CCG Wiki maintained",
     "subtitle": "Simple support options for readers who want to help maintain source-checked guides and data updates",
     "monthly": "Monthly",
     "yearly": "Yearly",
@@ -80,11 +80,11 @@
   "PricePlans": {
     "free": {
       "name": "Free",
-      "description": "Browse Anime Squadron Wiki with no payment required",
+      "description": "Browse Chrono CCG Wiki with no payment required",
       "features": {
-        "feature-1": "Anime Squadron code status and redemption notes",
-        "feature-2": "Unit-role tier list and upgrade priority guidance",
-        "feature-3": "Guides for traits, rerolls, game modes, Discord links, and beginner progression",
+        "feature-1": "Chrono CCG code status and redemption notes",
+        "feature-2": "Rules, Divers, Timelines, and syndicate guidance",
+        "feature-3": "Guides for decks, codes, cards, Discord links, and beginner progression",
         "feature-4": "Core pages updated as game information changes"
       },
       "limits": {
@@ -99,7 +99,7 @@
       "description": "For readers who want to support ongoing guide updates",
       "features": {
         "feature-1": "Support site maintenance",
-        "feature-2": "Help fund future Anime Squadron data checks",
+        "feature-2": "Help fund future Chrono CCG data checks",
         "feature-3": "Keep code and guide pages fresh",
         "feature-4": "Support cleaner walkthrough coverage",
         "feature-5": "Help improve page speed and hosting stability",
@@ -113,7 +113,7 @@
     },
     "max": {
       "name": "Backer",
-      "description": "For heavier support of Anime Squadron Wiki maintenance",
+      "description": "For heavier support of Chrono CCG Wiki maintenance",
       "features": {
         "feature-1": "Support expanded guide coverage",
         "feature-2": "Help fund more frequent source reviews",
@@ -294,7 +294,7 @@
         "title": "Codes"
       },
       "tierList": {
-        "title": "Tier List"
+        "title": "Meta Watch"
       },
       "guides": {
         "title": "Guides"
@@ -302,35 +302,37 @@
       "download": {
         "title": "Download"
       },
-      "units": {
-        "title": "Units"
+      "rules": {
+        "title": "Rules"
       },
-      "traits": {
-        "title": "Traits"
+      "decks": {
+        "title": "Decks"
+      },
+      "cards": {
+        "title": "Cards"
       },
       "tools": {
         "title": "Tools"
       },
-      "reroll": {
-        "title": "Reroll"
-      },
-      "gameModes": {
-        "title": "Modes"
+      "syndicates": {
+        "title": "Syndicates"
       },
       "discord": {
         "title": "Discord"
       }
     },
     "footer": {
-      "tagline": "An unofficial Anime Squadron Wiki for codes, unit tier lists, traits, rerolls, game modes, Discord links, and beginner progression.",
+      "tagline": "An independent Chrono CCG Wiki for rules, Divers, Timelines, syndicates, decks, card lists, beta codes, and safe Steam or Epic access.",
       "wiki": {
         "title": "Wiki",
         "items": {
+          "rules": "Rules",
+          "syndicates": "Syndicates",
+          "decks": "Decks",
+          "cards": "Cards",
+          "tools": "Tools",
           "codes": "Codes",
-          "tierList": "Tier List",
-          "units": "Units",
-          "traits": "Traits",
-          "gameModes": "Game Modes"
+          "tierList": "Meta Watch"
         }
       },
       "guides": {
@@ -338,9 +340,8 @@
         "items": {
           "all": "All Guides",
           "beginner": "Beginner Guide",
-          "units": "Units Guide",
-          "traits": "Traits Guide",
-          "reroll": "Reroll Guide"
+          "priority": "Priority Guide",
+          "deckbuilding": "Deckbuilding Guide"
         }
       },
       "legal": {

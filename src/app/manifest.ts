@@ -23,12 +23,12 @@ import type { MetadataRoute } from 'next';
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: defaultMessages.Metadata.name,
-    short_name: 'AnimeSquad Wiki',
+    short_name: 'Chrono CCG Wiki',
     description: defaultMessages.Metadata.description,
     start_url: '/',
     display: 'standalone',
-    background_color: '#090706',
-    theme_color: '#e03a22',
+    background_color: '#0A0D10',
+    theme_color: '#63E6DD',
     icons: [
       {
         src: '/favicon-32x32.png',

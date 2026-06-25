@@ -12,28 +12,33 @@ export function useFooterLinks(): NestedMenuItem[] {
       title: t('wiki.title'),
       items: [
         {
+          title: t('wiki.items.rules'),
+          href: Routes.Rules,
+          external: false,
+        },
+        {
+          title: t('wiki.items.syndicates'),
+          href: Routes.Syndicates,
+          external: false,
+        },
+        {
+          title: t('wiki.items.decks'),
+          href: Routes.Decks,
+          external: false,
+        },
+        {
+          title: t('wiki.items.cards'),
+          href: Routes.Cards,
+          external: false,
+        },
+        {
+          title: t('wiki.items.tools'),
+          href: Routes.Tools,
+          external: false,
+        },
+        {
           title: t('wiki.items.codes'),
           href: Routes.Codes,
-          external: false,
-        },
-        {
-          title: t('wiki.items.tierList'),
-          href: Routes.TierList,
-          external: false,
-        },
-        {
-          title: t('wiki.items.units'),
-          href: Routes.Units,
-          external: false,
-        },
-        {
-          title: t('wiki.items.traits'),
-          href: Routes.Traits,
-          external: false,
-        },
-        {
-          title: t('wiki.items.gameModes'),
-          href: Routes.GameModes,
           external: false,
         },
       ],
@@ -52,18 +57,13 @@ export function useFooterLinks(): NestedMenuItem[] {
           external: false,
         },
         {
-          title: t('guides.items.units'),
-          href: Routes.UnitsGuide,
+          title: t('guides.items.priority'),
+          href: Routes.PriorityGuide,
           external: false,
         },
         {
-          title: t('guides.items.traits'),
-          href: Routes.TraitsGuide,
-          external: false,
-        },
-        {
-          title: t('guides.items.reroll'),
-          href: Routes.RerollGuide,
+          title: t('guides.items.deckbuilding'),
+          href: Routes.DeckbuildingGuide,
           external: false,
         },
       ],

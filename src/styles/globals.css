@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Anime Squadron Wiki - dark, data-dense Roblox guide theme */
+/* Chrono CCG Wiki - dark, data-dense card guide theme */
 
 :root {
   --font-noto-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -389,11 +389,11 @@ body {
 }
 
 /*
- * Anime Squadron theme colors
+ * Chrono CCG theme colors
  */
 .theme-default {
-  --primary: #e03a22;
-  --primary-foreground: #fff5ea;
+  --primary: #63e6dd;
+  --primary-foreground: #051316;
 }
 
 .theme-blue {

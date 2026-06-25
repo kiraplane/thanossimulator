@@ -20,18 +20,18 @@ export const websiteConfig: WebsiteConfig = {
   },
   metadata: {
     images: {
-      ogImage: '/animesquadron/og-image.png',
+      ogImage: '/chronoccg/og-image.jpg',
       logoLight: '/logo.png',
       logoDark: '/logo.png',
     },
     social: {
       github: '',
-      twitter: '',
+      twitter: 'https://x.com/ChronoCCG',
       blueSky: '',
-      discord: '',
+      discord: 'https://discord.gg/chronoccg',
       mastodon: '',
       linkedin: '',
-      youtube: '',
+      youtube: 'https://www.youtube.com/@ChronoCCG',
     },
   },
   features: {
@@ -44,7 +44,7 @@ export const websiteConfig: WebsiteConfig = {
     enableTurnstileCaptcha: process.env.NEXT_PUBLIC_DEMO_WEBSITE === 'true',
   },
   routes: {
-    defaultLoginRedirect: '/settings/profile',
+    defaultLoginRedirect: '/',
   },
   analytics: {
     enableVercelAnalytics: false,
@@ -63,32 +63,6 @@ export const websiteConfig: WebsiteConfig = {
         name: 'English',
         hreflang: 'en-US',
       },
-      vi: {
-        flag: '🇻🇳',
-        name: 'Tiếng Việt',
-        hreflang: 'vi-VN',
-      },
-      th: {
-        flag: '🇹🇭',
-        name: 'ไทย',
-        hreflang: 'th-TH',
-      },
-      'pt-br': {
-        flag: '🇧🇷',
-        name: 'Português BR',
-        hreflang: 'pt-BR',
-      },
-      id: {
-        flag: '🇮🇩',
-        name: 'Bahasa Indonesia',
-        hreflang: 'id-ID',
-      },
-
-      'zh-tw': {
-        flag: '🇹🇼',
-        name: '繁體中文',
-        hreflang: 'zh-TW',
-      },
     },
   },
   blog: {
@@ -101,8 +75,8 @@ export const websiteConfig: WebsiteConfig = {
   },
   mail: {
     provider: 'resend',
-    fromEmail: 'Anime Squadron Wiki <hello@animesquadron.wiki>',
-    supportEmail: 'hello@animesquadron.wiki',
+    fromEmail: 'Chrono CCG Wiki <hello@chronoccg.wiki>',
+    supportEmail: 'hello@chronoccg.wiki',
   },
   newsletter: {
     enable: false,
