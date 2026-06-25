@@ -96,6 +96,11 @@ export default function TraitsPage() {
             <LocaleLink href="/reroll">Open reroll plan</LocaleLink>
           </Button>
           <Button asChild variant="outline">
+            <LocaleLink href="/trait-reroll-calculator">
+              Trait reroll calculator
+            </LocaleLink>
+          </Button>
+          <Button asChild variant="outline">
             <LocaleLink href="/tier-list">Check tier list first</LocaleLink>
           </Button>
           <Button asChild variant="outline">

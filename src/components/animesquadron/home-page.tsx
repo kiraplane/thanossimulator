@@ -54,6 +54,26 @@ const guideKeywordLinks = [
     href: '/guides/best-units-tier-list',
   },
   {
+    keyword: 'Anime Squadron best team combo',
+    href: '/best-team-combo',
+  },
+  {
+    keyword: 'Anime Squadron resource calculator',
+    href: '/resource-calculator',
+  },
+  {
+    keyword: 'Anime Squadron trait reroll calculator',
+    href: '/trait-reroll-calculator',
+  },
+  {
+    keyword: 'Anime Squadron Woo pity calculator',
+    href: '/woo-pity-calculator',
+  },
+  {
+    keyword: 'Anime Squadron secret units tracker',
+    href: '/secret-units-tracker',
+  },
+  {
     keyword: 'Anime Squadron 0.5 tier list',
     href: '/guides/update-0-5-tier-list',
   },
@@ -132,7 +152,25 @@ const updateHighlights = [
     href: '/guides/how-to-get-gogeta-gometa',
     icon: Trophy,
   },
+  {
+    title: 'Plan the five squad jobs',
+    body: 'Use the team combo tool to check carry, boss pressure, support, control, and flex coverage.',
+    href: '/best-team-combo',
+    icon: Users,
+  },
+  {
+    title: 'Budget Gems and cubes',
+    body: 'Use the resource calculator before spending Gems, Gold, rerolls, or Perfect Cubes.',
+    href: '/resource-calculator',
+    icon: Gem,
+  },
 ];
+
+const homeTrailer = {
+  title: 'Anime Squadron Official Release Trailer',
+  embedUrl: 'https://www.youtube.com/embed/_7rVikuTWqA',
+  url: 'https://www.youtube.com/watch?v=_7rVikuTWqA',
+};
 
 export function AnimeSquadronHomePage({ locale }: { locale?: string }) {
   const copy = getAnimeSquadronCopy(locale);
@@ -197,52 +235,81 @@ export function AnimeSquadronHomePage({ locale }: { locale?: string }) {
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(9,7,6,0.96)_0%,rgba(9,7,6,0.84)_42%,rgba(9,7,6,0.44)_74%,rgba(9,7,6,0.76)_100%)]" />
         <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#090706] to-transparent" />
 
-        <Container className="relative px-4 py-14 md:py-20 lg:min-h-[640px] lg:py-24">
-          <div className="max-w-3xl space-y-6">
-            <Badge className="bg-[#37D6D0] text-[#041414]">
-              {copy.home.badge}
-            </Badge>
-            <h1 className="font-display text-4xl font-black leading-tight sm:text-5xl md:text-7xl">
-              {copy.home.h1}
-            </h1>
-            <p className="max-w-2xl text-lg leading-8 text-[#F2D9C3] md:text-xl">
-              {copy.home.intro}
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Button
-                asChild
-                className="bg-[#E03A22] text-[#FFF5EA] hover:bg-[#FF5538]"
-              >
-                <LocaleLink href="/codes">
-                  {copy.home.codesCta}
-                  <ArrowRight className="size-4" />
-                </LocaleLink>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                className="border-[#37D6D0] bg-[#090706]/45 text-[#FFF5EA] hover:bg-[#37D6D0] hover:text-[#041414]"
-              >
-                <LocaleLink href="/tier-list">
-                  {copy.home.secondaryCta}
-                </LocaleLink>
-              </Button>
+        <Container className="relative px-4 py-8 md:py-10 lg:py-12">
+          <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_420px] xl:grid-cols-[minmax(0,1fr)_520px]">
+            <div className="max-w-3xl space-y-6">
+              <h1 className="font-display text-4xl font-black leading-tight sm:text-5xl md:text-7xl">
+                {copy.home.h1}
+              </h1>
+              <p className="max-w-2xl text-lg leading-8 text-[#F2D9C3] md:text-xl">
+                {copy.home.intro}
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Button
+                  asChild
+                  className="bg-[#E03A22] text-[#FFF5EA] hover:bg-[#FF5538]"
+                >
+                  <LocaleLink href="/codes">
+                    {copy.home.codesCta}
+                    <ArrowRight className="size-4" />
+                  </LocaleLink>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-[#37D6D0] bg-[#090706]/45 text-[#FFF5EA] hover:bg-[#37D6D0] hover:text-[#041414]"
+                >
+                  <LocaleLink href="/tier-list">
+                    {copy.home.secondaryCta}
+                  </LocaleLink>
+                </Button>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <LastUpdated date={codeCheckSummary.checkedAt} />
+                <a
+                  href={officialGameFacts.officialRobloxUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md border border-[#3A2A24] bg-[#130D0B] px-3 py-2 text-xs font-medium text-[#D5C6B7] transition hover:border-[#37D6D0] hover:text-[#37D6D0]"
+                >
+                  <RadioTower className="size-4" />
+                  {copy.home.robloxLabel}
+                </a>
+              </div>
             </div>
-            <div className="flex flex-wrap gap-3">
-              <LastUpdated date={codeCheckSummary.checkedAt} />
-              <a
-                href={officialGameFacts.officialRobloxUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-md border border-[#3A2A24] bg-[#130D0B] px-3 py-2 text-xs font-medium text-[#D5C6B7] transition hover:border-[#37D6D0] hover:text-[#37D6D0]"
-              >
-                <RadioTower className="size-4" />
-                {copy.home.robloxLabel}
-              </a>
-            </div>
+
+            <aside
+              aria-label="Anime Squadron official release trailer"
+              className="overflow-hidden rounded-lg border border-[#3A2A24] bg-[#130D0B]/90 shadow-2xl shadow-black/25 backdrop-blur"
+            >
+              <div className="aspect-video bg-black">
+                <iframe
+                  className="h-full w-full"
+                  src={homeTrailer.embedUrl}
+                  title={homeTrailer.title}
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <div className="flex flex-wrap items-center justify-between gap-3 border-[#3A2A24] border-t bg-[#090706] px-4 py-3">
+                <p className="font-semibold text-[#FFF5EA] text-sm">
+                  Official release trailer
+                </p>
+                <a
+                  href={homeTrailer.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1 text-[#37D6D0] text-sm transition hover:text-[#A9FFFA]"
+                >
+                  Watch on YouTube <ArrowRight className="size-3.5" />
+                </a>
+              </div>
+            </aside>
           </div>
 
-          <div className="mt-10 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-8 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
             {primaryLinks.map((item) => (
               <LocaleLink
                 key={item.href}

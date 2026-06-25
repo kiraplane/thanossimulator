@@ -46,6 +46,7 @@ const MARKETING_NAVBAR_KEYS = [
   'tierList',
   'units',
   'traits',
+  'tools',
   'reroll',
   'gameModes',
   'discord',

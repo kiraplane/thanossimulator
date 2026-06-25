@@ -32,6 +32,9 @@
       "traits": {
         "title": "特性"
       },
+      "tools": {
+        "title": "工具"
+      },
       "reroll": {
         "title": "重抽"
       },

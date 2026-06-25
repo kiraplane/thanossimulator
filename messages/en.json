@@ -308,6 +308,9 @@
       "traits": {
         "title": "Traits"
       },
+      "tools": {
+        "title": "Tools"
+      },
       "reroll": {
         "title": "Reroll"
       },

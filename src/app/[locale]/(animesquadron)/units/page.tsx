@@ -118,6 +118,11 @@ export default function UnitsPage() {
               <p className="mt-4 text-sm leading-7 text-[#F3B23A]">
                 Avoid: {entry.avoid}
               </p>
+              <Button asChild variant="outline" className="mt-5">
+                <LocaleLink href={`/units/roles/${entry.slug}`}>
+                  Open {entry.role} role page
+                </LocaleLink>
+              </Button>
             </article>
           ))}
         </div>
@@ -178,6 +183,11 @@ export default function UnitsPage() {
                   <Button asChild variant="outline" className="mt-5">
                     <LocaleLink href={guideRoute}>{guideLabel}</LocaleLink>
                   </Button>
+                  <Button asChild variant="outline" className="mt-3">
+                    <LocaleLink href={`/units/${entry.slug}`}>
+                      Open unit page
+                    </LocaleLink>
+                  </Button>
                 </article>
               );
             })}
@@ -194,6 +204,16 @@ export default function UnitsPage() {
           <Button asChild variant="outline">
             <LocaleLink href="/guides/best-units-tier-list">
               Read units guide
+            </LocaleLink>
+          </Button>
+          <Button asChild variant="outline">
+            <LocaleLink href="/best-team-combo">
+              Open team combo tool
+            </LocaleLink>
+          </Button>
+          <Button asChild variant="outline">
+            <LocaleLink href="/secret-units-tracker">
+              Secret units tracker
             </LocaleLink>
           </Button>
           <Button asChild variant="outline">

@@ -15,6 +15,11 @@ export enum Routes {
   // Anime Squadron guide routes
   Codes = '/codes',
   TierList = '/tier-list',
+  BestTeamCombo = '/best-team-combo',
+  ResourceCalculator = '/resource-calculator',
+  TraitRerollCalculator = '/trait-reroll-calculator',
+  WooPityCalculator = '/woo-pity-calculator',
+  SecretUnitsTracker = '/secret-units-tracker',
   Units = '/units',
   Traits = '/traits',
   GameModes = '/game-modes',

@@ -52,8 +52,7 @@ export const codes: GameCode[] = [
   },
   {
     code: 'UPD0.5!',
-    reward:
-      '3 Bounty Tickets, 1,000 Gems, 50 Trait Shards, and 1,000 Gold',
+    reward: '3 Bounty Tickets, 1,000 Gems, 50 Trait Shards, and 1,000 Gold',
     status: 'active',
     firstSeen: '2026-06-22',
     lastChecked: CODE_CHECKED_AT,

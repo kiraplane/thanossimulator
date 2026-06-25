@@ -115,6 +115,14 @@ export default async function TierListPage({
             ))}
           </div>
           <div className="mt-5 flex flex-wrap gap-3">
+            <Button
+              asChild
+              className="bg-[#E03A22] text-[#FFF5EA] hover:bg-[#FF5538]"
+            >
+              <LocaleLink href="/best-team-combo">
+                Open team combo tool
+              </LocaleLink>
+            </Button>
             <Button asChild variant="outline">
               <LocaleLink href="/guides/best-units-tier-list">
                 {copy.tierList.bestUnitsButton}
@@ -123,6 +131,11 @@ export default async function TierListPage({
             <Button asChild variant="outline">
               <LocaleLink href="/guides/secret-units-guide">
                 {copy.tierList.secretUnitsButton}
+              </LocaleLink>
+            </Button>
+            <Button asChild variant="outline">
+              <LocaleLink href="/secret-units-tracker">
+                Secret tracker
               </LocaleLink>
             </Button>
             <Button asChild variant="outline">
@@ -230,6 +243,11 @@ export default async function TierListPage({
                 <p className="mt-4 text-xs leading-6 text-[#9F8C7B]">
                   {copy.tierList.sourceLabel}: {entry.sourceLabels.join(', ')}
                 </p>
+                <Button asChild variant="outline" className="mt-5">
+                  <LocaleLink href={`/units/${entry.slug}`}>
+                    Open unit page
+                  </LocaleLink>
+                </Button>
               </article>
             ))}
           </div>

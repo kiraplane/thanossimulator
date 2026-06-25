@@ -123,6 +123,11 @@ export default async function CodesPage({
               <LocaleLink href="/reroll">{copy.codes.rerollButton}</LocaleLink>
             </Button>
             <Button asChild variant="outline">
+              <LocaleLink href="/resource-calculator">
+                Resource calculator
+              </LocaleLink>
+            </Button>
+            <Button asChild variant="outline">
               <LocaleLink href="/traits">{copy.codes.traitsButton}</LocaleLink>
             </Button>
           </div>
