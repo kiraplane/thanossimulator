@@ -67,20 +67,16 @@ export default async function middleware(req: NextRequest) {
     'animecardfarm.wiki',
     'www.animecardfarm.wiki',
   ]);
-  const canonicalHost = 'www.animecardfarm.wiki';
 
   if (
     hostname &&
     productionHosts.has(hostname) &&
-    (hostname !== canonicalHost ||
-      forwardedProto === 'http' ||
-      nextUrl.protocol === 'http:')
+    (forwardedProto === 'http' || nextUrl.protocol === 'http:')
   ) {
-    const canonicalUrl = new URL(nextUrl);
-    canonicalUrl.protocol = 'https:';
-    canonicalUrl.hostname = canonicalHost;
-    canonicalUrl.port = '';
-    return NextResponse.redirect(canonicalUrl, 308);
+    const secureUrl = new URL(nextUrl);
+    secureUrl.protocol = 'https:';
+    secureUrl.port = '';
+    return NextResponse.redirect(secureUrl, 308);
   }
 
   const pathnameWithoutLocale = getPathnameWithoutLocale(
