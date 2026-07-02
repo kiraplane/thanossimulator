@@ -4,7 +4,7 @@ import type { MetadataRoute } from 'next';
 import { routing } from '../i18n/routing';
 import { getCanonicalBaseUrl } from '../lib/urls/urls';
 
-const stableLastModified = new Date('2026-06-29T00:00:00.000Z');
+const stableLastModified = new Date('2026-07-02T00:00:00.000Z');
 
 function getLocalizedRoute(locale: string, route: string) {
   if (locale === routing.defaultLocale) {

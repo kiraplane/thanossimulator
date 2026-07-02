@@ -1,9 +1,20 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-06-29';
+export const CODE_CHECKED_AT = '2026-07-02';
 
 export const activeCodes: GameCode[] = [
+  {
+    code: 'BRUTALCOMEBACK!',
+    reward: '100 Trait Gems and five Luck II Potions',
+    status: 'active',
+    firstSeen: '2026-07-02',
+    lastChecked: CODE_CHECKED_AT,
+    sourceLabel: 'Pocket Tactics, Roblox Den, GameRant, Deltia',
+    confidence: 'medium',
+    notes:
+      'Newest July source-checked code. Copy the exclamation mark; reward wording should follow the in-game popup if code trackers disagree.',
+  },
   {
     code: 'POTIONS',
     reward: '1 Cash Potion, 1 Luck Potion, and 1 Mutation Potion',
@@ -68,6 +79,10 @@ export const codeCheckSummary = {
     {
       label: 'RoCodes',
       url: 'https://rocodes.gg/codes/anime-card-farm',
+    },
+    {
+      label: 'Pocket Tactics',
+      url: 'https://www.pockettactics.com/anime-card-farm-codes',
     },
   ],
 };

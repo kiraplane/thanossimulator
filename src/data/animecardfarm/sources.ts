@@ -1,6 +1,7 @@
 import type { DataSource } from './types';
 
 export const CHECKED_AT = '2026-06-27';
+export const OFFICIAL_CHECKED_AT = '2026-07-02';
 
 export const officialGameFacts = {
   name: 'Anime Card Farm',
@@ -10,21 +11,21 @@ export const officialGameFacts = {
   canonicalHost: 'www.animecardfarm.wiki',
   robloxPlaceId: '125039473548047',
   robloxUniverseId: '10144587520',
-  creatorName: 'dream without the vale',
+  creatorName: 'Anime Card Factory',
   creatorType: 'Roblox Group',
-  creatorId: '871710876',
+  creatorId: '973045631',
   genre: 'Roblox idle card collector / tycoon',
   status: 'Live Roblox experience',
   createdAt: '2026-05-09T20:45:04.606Z',
-  updatedAt: '2026-06-26T11:23:48.219Z',
+  updatedAt: '2026-07-01T09:56:20.8433359Z',
   maxPlayers: 8,
-  activePlayersAtCheck: 10800,
-  visitsAtCheck: 6579343,
-  favoritesAtCheck: 271413,
+  activePlayersAtCheck: 7853,
+  visitsAtCheck: 8158160,
+  favoritesAtCheck: 466885,
   officialRobloxUrl:
     'https://www.roblox.com/games/125039473548047/Anime-Card-Farm',
   officialGroupUrl:
-    'https://www.roblox.com/communities/871710876/dream-without-the-vale',
+    'https://www.roblox.com/communities/973045631/Anime-Card-Factory',
   discordUrl: 'https://discord.com/invite/xyBFac6R7q',
 };
 
@@ -36,17 +37,17 @@ export const officialSources: DataSource[] = [
     type: 'official',
     label: 'Anime Card Farm on Roblox',
     url: officialGameFacts.officialRobloxUrl,
-    checkedAt: '2026-06-29',
+    checkedAt: OFFICIAL_CHECKED_AT,
     confidence: 'high',
-    note: 'Primary source for the game name, developer group, live Roblox status, max players, and official gameplay description. June 29 pass confirmed the latest public update timestamp remains June 26, 2026.',
+    note: 'Primary source for the game name, developer group, live Roblox status, max players, and official gameplay description. July 2 pass confirmed the public title [UPD🔥] Anime Card Farm and a July 1, 2026 update timestamp.',
   },
   {
     type: 'roblox_api',
     label: 'Roblox universe API snapshot',
     url: `https://games.roblox.com/v1/games?universeIds=${officialGameFacts.robloxUniverseId}`,
-    checkedAt: '2026-06-29',
+    checkedAt: OFFICIAL_CHECKED_AT,
     confidence: 'high',
-    note: 'Confirmed creation date, latest update timestamp, Simulation/Tycoon genre, visits, favorites, and live player count at research time.',
+    note: 'Confirmed creation date, latest update timestamp, Simulation/Tycoon genre, visits, favorites, creator group, and live player count at research time.',
   },
   {
     type: 'codes_site',

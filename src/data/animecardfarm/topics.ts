@@ -1,5 +1,5 @@
 import { activeCodes } from './codes';
-import { CHECKED_AT, officialGameFacts } from './sources';
+import { CHECKED_AT, OFFICIAL_CHECKED_AT, officialGameFacts } from './sources';
 import type { TopicPage } from './types';
 
 const commonImage = '/animecardfarm/hero.jpg';
@@ -239,7 +239,7 @@ export const topicPages: Record<string, TopicPage> = {
       {
         heading: 'Official Roblox update signal',
         paragraphs: [
-          `Roblox API data checked on ${CHECKED_AT} reports the experience was last updated at ${officialGameFacts.updatedAt}. The public title includes an update marker, but the game page does not expose detailed patch notes in the checked public data.`,
+          `Roblox API data checked on ${OFFICIAL_CHECKED_AT} reports the experience was last updated at ${officialGameFacts.updatedAt}. The public title includes an update marker, but the game page does not expose detailed patch notes in the checked public data.`,
           'Because the official signal is thin, this site updates player-facing guides only when the mechanic or code evidence is strong enough. Large tools, exact card tables, and mutation values remain watch items until reliable data exists.',
         ],
       },
