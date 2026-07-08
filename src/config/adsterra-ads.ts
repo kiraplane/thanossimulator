@@ -154,7 +154,7 @@ export function getAdsterraDisplayScriptBaseUrl() {
 export function getAdsterraNativeScriptBaseUrl() {
   return (
     readEnv('ADSTERRA_NATIVE_SCRIPT_BASE_URL') ||
-    'https://pl30171417.effectivecpmnetwork.com'
+    'https://pl30259067.effectivecpmnetwork.com'
   ).replace(/\/+$/, '');
 }
 

@@ -510,6 +510,13 @@ export const guides: Guide[] = [
         ],
       },
       {
+        heading: 'Use named weapon searches as route shortcuts',
+        paragraphs: [
+          'Current long-tail demand includes names like Tempad, Surtur, Gungnir, and codes. Treat each named search as a shortcut to a route question: what prerequisite is missing, what boss or world gates it, and what the weapon changes after unlock.',
+          'This keeps the weapons page useful without pretending there is one universal best weapon. A player who searches Gungnir usually needs fragments and forge direction. A player who searches Surtur usually needs endgame boss readiness. A player who searches Tempad usually needs movement or route context.',
+        ],
+      },
+      {
         heading: 'Why this is not a fake best-weapon page',
         paragraphs: [
           'A copied tier list would be low-maintenance but not very useful. A new player asking for "best weapon" usually means "what can I get next without wasting time?" This page answers that job by putting weapons into route stages.',
@@ -870,6 +877,13 @@ export const guides: Guide[] = [
         paragraphs: [
           'When you see a claimed code, first verify that the page names this exact Roblox experience and not a generic "Infinity" game. Then check whether the claim points to official Roblox text, a developer post, or a visible in-game redeem UI. If it only appears beside scripts or download buttons, treat it as unsafe.',
           'Never enter your Roblox password into a third-party code site. Real Roblox gameplay rewards should be handled inside Roblox, not through an external login form.',
+        ],
+      },
+      {
+        heading: 'Surtur-code and Tempad searches need safe answers',
+        paragraphs: [
+          'Players may search for Surtur code or Tempad because those names sound like unlock shortcuts. Do not treat that wording as proof of a redeem code. Answer the intent safely: check whether the goal is a weapon route, a boss route, or a movement/control question.',
+          'If a future official code exists, it belongs on the codes page. Until then, named-item searches should point players toward weapon prerequisites and controls, not external script pages.',
         ],
       },
     ],
