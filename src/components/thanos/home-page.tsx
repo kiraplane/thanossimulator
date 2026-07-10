@@ -91,6 +91,7 @@ const keywordLinks = [
   { keyword: 'thanos simulator', href: '/' },
   { keyword: 'thanos simulator wiki', href: '/' },
   { keyword: 'all stones', href: '/guides/all-infinity-stones-guide' },
+  { keyword: 'tempad', href: '/guides/tempad-route-guide' },
   { keyword: 'controls', href: '/guides/gauntlet-controls-guide' },
   {
     keyword: 'mechanical gloves',

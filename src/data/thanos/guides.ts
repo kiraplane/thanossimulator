@@ -145,6 +145,7 @@ export const relatedRouteLabels: Record<string, string> = {
   '/guides/heart-of-ymir-guide': 'Heart of Ymir',
   '/guides/stormbreaker-mjolnir-guide': 'Stormbreaker and Mjolnir',
   '/guides/gungnir-fragments-guide': 'Gungnir and Fragments',
+  '/guides/tempad-route-guide': 'Tempad Route',
   '/guides/codes-and-scripts-safety-guide': 'Codes and Script Safety',
 };
 
@@ -826,6 +827,90 @@ export const guides: Guide[] = [
         question: 'Is Gungnir needed before Mechanical Gloves?',
         answer:
           'Not as the main public prerequisite. Mechanical Gloves route data focuses more on Doom setup and other specific weapon interactions.',
+      },
+    ],
+  },
+  {
+    slug: 'tempad-route-guide',
+    title: 'Thanos Simulator Tempad Route Guide',
+    seoTitle: 'Thanos Simulator Tempad Guide - Route, Stones and Safety',
+    seoDescription:
+      'Use this Thanos Simulator Tempad route guide to check map progress, stone gates, controls, boss goals, and safe unlock intent without scripts.',
+    summary:
+      'A route-first answer for players searching Tempad, movement unlocks, map gates, and item shortcuts in Thanos Simulator.',
+    category: 'Map',
+    difficulty: 'Intermediate',
+    coverImageUrl: videoCover(videos.stones2026),
+    publishedAt: CHECKED_AT,
+    updatedAt: CHECKED_AT,
+    sourceStrategy: 'user_intent_youtube',
+    sourceNotes:
+      'Added after July 10 long-tail checks surfaced Tempad intent beside all-stones and map-route searches. Public videos are used as route context, not copied as exact unlock claims.',
+    video: videos.stones2026,
+    videoSearchQueries: [
+      'Thanos Simulator Tempad',
+      'Infinity Gauntlet Thanos Simulator Tempad',
+      'Thanos Simulator all stones route',
+    ],
+    tags: ['Tempad', 'Map', 'Stones'],
+    relatedRoutes: [
+      '/map',
+      '/controls',
+      '/guides/all-infinity-stones-guide',
+      '/tools/infinity-stones-tracker',
+      '/guides/codes-and-scripts-safety-guide',
+    ],
+    body: [
+      {
+        heading: 'Treat Tempad as a route question first',
+        paragraphs: [
+          'Tempad searches usually mean the player is stuck on movement, map access, or a shortcut-sounding item name. Start by checking the route, not by searching for a code. Open the map hub, confirm the world or zone you are trying to reach, then compare that blocker with your current stones and controls.',
+          'If the next step is unclear, write the blocker in one sentence: missing stone, missing boss clear, missing weapon route, or missing movement control. That keeps the Tempad search from turning into random script pages.',
+        ],
+        bullets: [
+          'Map blocker: check the route hub before changing goals.',
+          'Stone blocker: use the all-stones guide and tracker.',
+          'Control blocker: practice movement and gauntlet inputs.',
+          'Unsafe blocker: avoid executor or auto-farm pages.',
+        ],
+      },
+      {
+        heading: 'Check stones before chasing shortcuts',
+        paragraphs: [
+          'Most Thanos Simulator progression still runs through stones, bosses, weapons, and route gates. If a Tempad mention appears beside a guide or video, treat it as a lead that points back to the current progression chain. A shortcut only matters when the prerequisites behind it are solved.',
+          'Use the stones tracker to mark what is actually done. If a stone route is missing, solve that first. If all key stones are done, move to map routes, controls, or the weapon and boss objective tied to your current stage.',
+        ],
+      },
+      {
+        heading: 'Use Tempad with a boss or weapon goal',
+        paragraphs: [
+          'A movement item is useful when it supports a goal: reaching the next zone, repeating a boss route, checking a weapon prerequisite, or reducing travel after a failed attempt. It is less useful when you do not know what you are traveling toward.',
+          'Before farming for a named item, pick the next boss or weapon target. That target tells you whether the Tempad search should connect to map routes, controls, weapons, or all-stones cleanup.',
+        ],
+      },
+      {
+        heading: 'Do not confuse Tempad with a script',
+        paragraphs: [
+          'Some search results mix named items with scripts, executors, fake downloads, or account-risk shortcuts. This guide does not provide those. If a page asks for an executor, third-party login, APK, or off-platform reward, close it and return to the official Roblox route.',
+          'The safe path is slower but durable: route guides, controls practice, stone checks, and boss preparation.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Is Tempad a Thanos Simulator code?',
+        answer:
+          'No verified code is listed here. Treat Tempad as a route or item-search intent unless the official game or a strong source confirms a redeem code.',
+      },
+      {
+        question: 'What should I check before searching Tempad again?',
+        answer:
+          'Check map route, controls, all-stones progress, and the boss or weapon target that made you search Tempad.',
+      },
+      {
+        question: 'Should I use a Tempad script?',
+        answer:
+          'No. Avoid executors, APK mirrors, and script pages. Use the official Roblox game and safe route guides.',
       },
     ],
   },

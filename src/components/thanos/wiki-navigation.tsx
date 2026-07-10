@@ -75,6 +75,7 @@ const wikiNavGroups: WikiNavGroup[] = [
     links: [
       { href: '/stones', label: 'Stones Hub' },
       { href: '/guides/all-infinity-stones-guide', label: 'All Stones Guide' },
+      { href: '/guides/tempad-route-guide', label: 'Tempad Route' },
       { href: '/guides/gauntlet-controls-guide', label: 'Gauntlet Controls' },
       { href: '/map', label: 'Map Routes' },
     ],
