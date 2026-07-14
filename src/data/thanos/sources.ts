@@ -1,7 +1,7 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-07-11';
-export const OFFICIAL_CHECKED_AT = '2026-07-11';
+export const CHECKED_AT = '2026-07-14';
+export const OFFICIAL_CHECKED_AT = '2026-07-14';
 
 export const officialGameFacts = {
   name: '[ Update ] Infinity Gauntlet | Thanos Simulator',
@@ -17,11 +17,11 @@ export const officialGameFacts = {
   genre: 'Roblox fighting simulator',
   status: 'Live Roblox experience',
   createdAt: '2019-06-05T14:19:14.787Z',
-  updatedAt: '2026-07-05T18:04:05.5590047Z',
+  updatedAt: '2026-07-08T21:00:47.549Z',
   maxPlayers: 7,
-  activePlayersAtCheck: 1196,
-  visitsAtCheck: 75776334,
-  favoritesAtCheck: 182260,
+  activePlayersAtCheck: 1125,
+  visitsAtCheck: 77005038,
+  favoritesAtCheck: 184093,
   upVotesAtCheck: 88900,
   downVotesAtCheck: 24251,
   officialRobloxUrl:
