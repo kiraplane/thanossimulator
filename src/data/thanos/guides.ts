@@ -989,6 +989,88 @@ export const guides: Guide[] = [
       },
     ],
   },
+  {
+    slug: 'tesseract',
+    title: 'Thanos Simulator Tesseract Guide',
+    seoTitle: 'Thanos Simulator Tesseract - Space Stone Route and Uses',
+    seoDescription:
+      'Find and use the Tesseract in Thanos Simulator with Space Stone prerequisites, route checks, controls, server troubleshooting and safe progression links.',
+    summary:
+      'Treat the Tesseract as part of the Space Stone progression route, not as a redeem code or external download. Verify the current zone, interaction prompt, and gauntlet state before retrying.',
+    category: 'Stones',
+    difficulty: 'Intermediate',
+    coverImageUrl: localCover,
+    publishedAt: CHECKED_AT,
+    updatedAt: CHECKED_AT,
+    sourceStrategy: 'community_crosscheck',
+    sourceNotes:
+      'Built from the current stones, map and Tempad route coverage plus repeated competitor references to the Tesseract/Space Stone progression. Exact interactions remain server-build sensitive.',
+    videoSearchQueries: [
+      'Thanos Simulator Tesseract guide',
+      'Infinity Gauntlet Thanos Simulator Space Stone',
+      'Thanos Simulator Tesseract location',
+    ],
+    tags: ['Tesseract', 'Space Stone', 'Route'],
+    relatedRoutes: [
+      '/stones',
+      '/database/stones',
+      '/map',
+      '/guides/all-infinity-stones-guide',
+      '/tools/infinity-stones-tracker',
+    ],
+    body: [
+      {
+        heading: 'Confirm what the Tesseract means in this game',
+        paragraphs: [
+          'The Tesseract is a Space Stone progression term, not a verified Thanos Simulator code. Open the official Roblox experience and use the stones hub to confirm which stone stage and zone you are currently solving.',
+          'Do not follow pages that ask you to paste a script, download a model, or log in outside Roblox. Those results are answering a different intent.',
+        ],
+      },
+      {
+        heading: 'Tesseract route checklist',
+        paragraphs: [
+          'Enter with the required earlier progress complete, follow the current map route to the Space Stone interaction, and read the live prompt before using gauntlet controls. If the object is visible but inactive, check whether the current server recognizes your prerequisite state.',
+        ],
+        bullets: [
+          'Verify the correct official place and a current public server.',
+          'Check prior Infinity Stone progression in the tracker.',
+          'Follow the current map/zone route rather than an old coordinate claim.',
+          'Use the displayed interaction or gauntlet control.',
+          'Confirm the stone state changed before leaving the zone.',
+        ],
+      },
+      {
+        heading: 'Fix a missing or inactive Tesseract',
+        paragraphs: [
+          'Reset once, re-equip the relevant gauntlet state, and test the interaction again. If it remains inactive, join a fresh server and repeat only the final prerequisite and zone steps.',
+          'A stale server or incomplete prerequisite is more likely than a secret code. Record the zone and prompt state before asking for help so another player can reproduce it.',
+        ],
+      },
+      {
+        heading: 'What to do after the Space Stone step',
+        paragraphs: [
+          'Update the stones tracker, test the new ability in a safe area, and return to the all-stones route. Rare weapon and boss guides should wait until their own prerequisites are visible on your account.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: 'Is Tesseract a Thanos Simulator code?',
+        answer:
+          'No verified redeem code uses that name here. It is treated as a Space Stone progression and route term.',
+      },
+      {
+        question: 'Why can I not interact with the Tesseract?',
+        answer:
+          'Check earlier stone progress, the current zone, equipped gauntlet state, and server age, then retry in a fresh server.',
+      },
+      {
+        question: 'Should I use a Tesseract script?',
+        answer:
+          'No. Use the official Roblox game and current in-game prompts; scripts and executors can risk the account.',
+      },
+    ],
+  },
 ];
 
 export function getGuide(slug: string) {

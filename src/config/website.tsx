@@ -63,6 +63,11 @@ export const websiteConfig: WebsiteConfig = {
         name: 'English',
         hreflang: 'en-US',
       },
+      ru: {
+        flag: '🇷🇺',
+        name: 'Русский',
+        hreflang: 'ru-RU',
+      },
     },
   },
   blog: {

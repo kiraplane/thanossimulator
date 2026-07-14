@@ -1,4 +1,6 @@
 import Container from '@/components/layout/container';
+import { ThanosLocalizedCorePage } from '@/components/thanos/localized-core-page';
+import { getThanosLocalizedCoreCopy } from '@/data/thanos/localized-core';
 import { JsonLd } from '@/components/seo/json-ld';
 import { Badge } from '@/components/ui/badge';
 import {
@@ -19,9 +21,13 @@ export async function generateMetadata({
   params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const localized = getThanosLocalizedCoreCopy(locale, 'database');
   return constructMetadata({
-    title: 'Thanos Simulator Database - Stones, Weapons, Bosses and Map',
+    title:
+      localized?.title ??
+      'Thanos Simulator Database - Stones, Weapons, Bosses and Map',
     description:
+      localized?.description ??
       'Browse structured Thanos Simulator data for Infinity Stones, weapons, bosses, zones, prerequisites, and route hints.',
     locale,
     pathname: '/database',
@@ -29,7 +35,9 @@ export async function generateMetadata({
   });
 }
 
-export default function DatabasePage() {
+export default async function DatabasePage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
+  if (locale === 'ru') return <ThanosLocalizedCorePage locale={locale} pageKey="database" />;
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',

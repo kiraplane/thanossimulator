@@ -1,4 +1,6 @@
 import { TopicPage } from '@/components/thanos/topic-page';
+import { ThanosLocalizedCorePage } from '@/components/thanos/localized-core-page';
+import { getThanosLocalizedCoreCopy } from '@/data/thanos/localized-core';
 import { getTopicPage } from '@/data/thanos/topics';
 import { constructMetadata } from '@/lib/metadata';
 import type { Metadata } from 'next';
@@ -12,15 +14,18 @@ export async function generateMetadata({
   params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const localized = getThanosLocalizedCoreCopy(locale, 'weapons');
   return constructMetadata({
-    title: topic.seoTitle,
-    description: topic.seoDescription,
+    title: localized?.title ?? topic.seoTitle,
+    description: localized?.description ?? topic.seoDescription,
     locale,
     pathname: topic.route,
     image: '/thanos/og-image.png',
   });
 }
 
-export default function WeaponsPage() {
+export default async function WeaponsPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
+  if (locale === 'ru') return <ThanosLocalizedCorePage locale={locale} pageKey="weapons" />;
   return <TopicPage topic={topic} />;
 }

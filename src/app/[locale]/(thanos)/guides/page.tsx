@@ -1,5 +1,7 @@
 import { AdsterraAdFrame } from '@/components/ads/adsterra-ad';
 import Container from '@/components/layout/container';
+import { ThanosLocalizedCorePage } from '@/components/thanos/localized-core-page';
+import { getThanosLocalizedCoreCopy } from '@/data/thanos/localized-core';
 import { JsonLd } from '@/components/seo/json-ld';
 import { FaqSection } from '@/components/thanos/faq-section';
 import { Badge } from '@/components/ui/badge';
@@ -18,9 +20,13 @@ export async function generateMetadata({
   params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const localized = getThanosLocalizedCoreCopy(locale, 'guides');
   return constructMetadata({
-    title: 'Thanos Simulator Guides - Stones, Weapons, Bosses and Controls',
+    title:
+      localized?.title ??
+      'Thanos Simulator Guides - Stones, Weapons, Bosses and Controls',
     description:
+      localized?.description ??
       'Read Thanos Simulator guides for all Infinity Stones, gauntlet controls, weapons, Doom, Surtur, Heart of Ymir, Gungnir, codes safety, and official Roblox links.',
     locale,
     pathname: '/guides',
@@ -28,7 +34,9 @@ export async function generateMetadata({
   });
 }
 
-export default function GuidesPage() {
+export default async function GuidesPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
+  if (locale === 'ru') return <ThanosLocalizedCorePage locale={locale} pageKey="guides" />;
   const categories = Array.from(new Set(guides.map((guide) => guide.category)));
   const jsonLd = {
     '@context': 'https://schema.org',
