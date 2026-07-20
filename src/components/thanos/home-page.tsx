@@ -221,7 +221,8 @@ const toolWorkflow = [
 export function ThanosHomePage() {
   const latestGuides = guides.slice(0, 6);
   const featuredVideo =
-    guides.find((guide) => guide.slug === 'all-infinity-stones-guide')?.video ??
+    guides.find((guide) => guide.slug === 'mechanical-gloves-doom-guide')
+      ?.video ??
     guides.find((guide) => guide.video)?.video;
   const jsonLd = {
     '@context': 'https://schema.org',

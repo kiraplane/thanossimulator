@@ -1,7 +1,7 @@
 import type { DataSource } from './types';
 
-export const CHECKED_AT = '2026-07-19';
-export const OFFICIAL_CHECKED_AT = '2026-07-19';
+export const CHECKED_AT = '2026-07-20';
+export const OFFICIAL_CHECKED_AT = '2026-07-20';
 
 export const officialGameFacts = {
   name: '[ Update ] Infinity Gauntlet | Thanos Simulator',
