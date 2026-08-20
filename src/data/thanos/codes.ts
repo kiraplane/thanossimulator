@@ -1,7 +1,7 @@
 import { officialGameFacts } from './sources';
 import type { GameCode } from './types';
 
-export const CODE_CHECKED_AT = '2026-08-17';
+export const CODE_CHECKED_AT = '2026-08-20';
 
 export const activeCodes: GameCode[] = [];
 
